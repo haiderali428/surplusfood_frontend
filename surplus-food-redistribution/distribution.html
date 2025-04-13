@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiving Donations</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/modern.css">
+    <link rel="stylesheet" href="./css/custom.css">
+   
+    <style>
+        .table-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+ <!-- ********* Header-section start *********** -->
+ <header class="suplus-header sticky-top">
+    <nav class="py-2 navbar navbar-expand-lg bg-body-tertiary" style="background: transparent !important;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="#" style="font-weight: 700; font-size: 20px;">
+          <div class="d-flex align-items-center gap-2 text-white">Suplus Food</div>
+        </a>
+  
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customNavbar" aria-controls="customNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Centered Navbar Items -->
+        <div class="collapse navbar-collapse justify-content-center" id="customNavbar">
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
+            <li class="nav-item dropdown engagements-dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="engagementsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Engagements
+                  <img src="./img/sidebar/dd.svg" class="ms-2 dropdown-arrow" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="engagementsDropdown">
+                  <li><a class="dropdown-item" href="#">Donations</a></li>
+                  <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                </ul>
+              </li>
+              
+              
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Profile Dropdown on the Right for Larger Screens -->
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <a href="./signup.html">
+            <button class="btn btn-outline-secondary">Add Needy Person</button>
+          </a>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle custom-dropdown d-flex align-items-center gap-2 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;">
+              <img src="./img/avatars/avatar-2.jpg" style="width: 32px; height: 32px; border-radius: 50%;">
+              <div class="me-2">
+                <p class="mb-0 profile-name1">Taylor Hill</p>
+                <p class="mb-0 profile-name" style="margin-left: -8px;">taylorh77</p>
+              </div>
+              <img src="./img/sidebar/dd.svg" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>    
+<!-- ********* Header-section end *********** -->
+<div class="container mt-5">
+    
+
+    <!-- Search Bar with Icon -->
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-6">
+                <h2>Distribution</h2>
+            </div>
+            <div class="col-6 text-end">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search donations...">
+                    <button class="btn btn-outline-secondary" type="button" id="search-button">
+                        <i class="bi bi-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Table to Display Donation Data -->
+    <div class="table-container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>Requsted Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>johndoe@example.com</td>
+                    <td>1234 Elm Street, Springfield</td>
+                    <td>(555) 123-4567</td>
+                    <td>2</td>
+                    <td>
+                        <select class="form-select" aria-label="Status select">
+                            <option value="pending">Pending</option>
+                            <option value="receiving">Accept</option>
+                            <option value="reject">Reject</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>janesmith@example.com</td>
+                    <td>5678 Oak Avenue, Rivertown</td>
+                    <td>(555) 987-6543</td>
+                    <td>3</td>
+                    <td>
+                        <select class="form-select" aria-label="Status select">
+                            <option value="pending">Pending</option>
+                            <option value="receiving">Accept</option>
+                            <option value="reject">Reject</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Michael</td>
+                    <td>Johnson</td>
+                    <td>mjohnson@example.com</td>
+                    <td>7890 Pine Road, Greenfield</td>
+                    <td>(555) 345-6789</td>
+                    <td>4</td>
+                    <td>
+                        <select class="form-select" aria-label="Status select">
+                            <option value="pending">Pending</option>
+                            <option value="receiving">Accept</option>
+                            <option value="reject">Reject</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Emily</td>
+                    <td>Williams</td>
+                    <td>emilywilliams@example.com</td>
+                    <td>2345 Maple Lane, Oakwood</td>
+                    <td>(555) 876-5432</td>
+                    <td>3</td>
+                    <td>
+                        <select class="form-select" aria-label="Status select">
+                            <option value="pending">Pending</option>
+                            <option value="receiving">Accept</option>
+                            <option value="reject">Reject</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>David</td>
+                    <td>Martinez</td>
+                    <td>davidm@example.com</td>
+                    <td>4567 Birch Blvd, Lakeview</td>
+                    <td>(555) 654-3210</td>
+                    <td>3</td>
+                    <td>
+                        <select class="form-select" aria-label="Status select">
+                            <option value="pending">Pending</option>
+                            <option value="receiving">Accept</option>
+                            <option value="reject">Reject</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination Controls -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center" id="pagination">
+            <!-- Pagination buttons will be inserted here -->
+            <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

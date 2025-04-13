@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/modern.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>Document</title>
+</head>
+<body>
+   
+     <!-- ********* Header-section start *********** -->
+     <header class="suplus-header sticky-top">
+        <nav class="py-2 navbar navbar-expand-lg bg-body-tertiary" style="background: transparent !important;">
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="#" style="font-weight: 700; font-size: 20px;">
+              <div class="d-flex align-items-center gap-2 text-white">Suplus Food</div>
+            </a>
+      
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customNavbar" aria-controls="customNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Centered Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="customNavbar">
+              <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
+                <li class="nav-item dropdown engagements-dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="engagementsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Engagements
+                      <img src="./img/sidebar/dd.svg" class="ms-2 dropdown-arrow" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="engagementsDropdown">
+                      <li><a class="dropdown-item" href="#">Donations</a></li>
+                      <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                      <li><a class="dropdown-item" href="#">Events</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <!-- Profile Dropdown on the Right for Larger Screens -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <a href="./signup.html">
+                <button class="btn btn-outline-secondary">Add Needy Person</button>
+              </a>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle custom-dropdown d-flex align-items-center gap-2 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;">
+                  <img src="./img/avatars/avatar-2.jpg" style="width: 32px; height: 32px; border-radius: 50%;">
+                  <div class="me-2">
+                    <p class="mb-0 profile-name1">Taylor Hill</p>
+                    <p class="mb-0 profile-name" style="margin-left: -8px;">taylorh77</p>
+                  </div>
+                  <img src="./img/sidebar/dd.svg" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>    
+    <!-- ********* Header-section end *********** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-1 mt-3">
+                      haider
+                <!-- Sidebar for medium and larger screens -->
+                <!-- <div class="sidebar d-none d-md-block sticky-top top-0">
+                    <nav class="nav flex-column">
+                        <a href="index.html" class="nav-link me-5 mb-1 Sidebar-nav-links active">
+                            <img src="./img/sidebar/newadmin-dashboard.svg"
+                                class="me-2 sidebar-icons" style="width: 18px; height: 18px;">
+                            <p class="mb-0 sidebar-labels">Dashboard</p>
+                        </a>
+                        <a href="blog-post.html" class="nav-link me-5 mb-1 Sidebar-nav-links">
+                            <img src="./img/sidebar/newadmin-post.svg" class="me-2 sidebar-icons"
+                                style="width: 16.5px; height: 16.5px;">
+                            <p class="mb-0 sidebar-labels">Posts</p>
+                        </a>
+                        <a href="comment.html" class="nav-link me-5 mb-1 Sidebar-nav-links">
+                            <img src="./img/sidebar/newadmin-comment.svg" class="me-2 sidebar-icons"
+                                style="width: 16.5px; height: 16.5px;">
+                            <p class="mb-0 sidebar-labels">Comments</p>
+                        </a>
+
+
+                        <div class="sidebar-heading ">Other</div>
+
+                        <a href="#" class="nav-link me-5 mb-1  Sidebar-nav-links">
+                            <img src="./img/sidebar/Bookmarks.svg" class="me-2 sidebar-icons"
+                                style="width: 16px; height: 16px;">
+                            <p class="mb-0 sidebar-labels">Community</p>
+                        </a>
+
+                        <a href="#" class="nav-link me-5 mb-1  Sidebar-nav-links">
+                            <img src="./img/sidebar/Setting.svg" class="me-2 sidebar-icons"
+                                style="width: 16px; height: 16px;">
+                            <p class="mb-0 sidebar-labels">Setting</p>
+                        </a>
+
+                        <a href="#" class="nav-link me-5 mb-1  Sidebar-nav-links">
+                            <img src="./img/sidebar/Help.svg" class="me-2 sidebar-icons"
+                                style="width: 16px; height: 16px;">
+                            <p class="mb-0 sidebar-labels">Help</p>
+                        </a>
+
+
+                        <br>
+
+
+                        
+                        <div class="other-nav-items">
+                            <div class="d-flex mt-5 mb-2 pt-5">
+                                <a href="#" class="other-sb">About</a>
+                                <div class="border-bdr"></div>
+                                <a class="other-sb">Terms & Condition</a>
+                                <div class="border-bdr"></div>
+                            </div>
+                            <div class="d-flex">
+                                <a class="other-sb">Privacy Policy</a>
+                                <div class="border-bdr"></div>
+                                <a class="other-sb">Contact</a>
+                            </div>
+                            <div class="d-flex gap-3 mt-3 mb-3">
+                                <img src="./img/sidebar/insta.svg">
+                                <img src="./img/sidebar/x-twitter.svg">
+                                <img src="./img/sidebar/fb.svg">
+                                <img src="./img/sidebar/utube.svg">
+                            </div>
+                            <div class="d-flex gap-2 mt-1 mb-3">
+
+                                <img src="./img/sidebar/google-playstore (1).png" class="gogle-play-img">
+                                <img src="./img/sidebar/google-playstore (2).png" class="gogle-play-img">
+
+
+                            </div>
+                            <div>
+                                <p class="other-sb11">©2024 XO Black. All right reserved.</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div> -->
+
+                <!-- Bottom Navbar for small screens -->
+                <!-- <div class="bottom-navbar d-md-none fixed-bottom bg-white py-2"
+                    style="display: flex; justify-content: center; align-items: center;">
+                    <div class="d-flex overflow-auto scrollbar-hidden px-0">
+                        <a href="#" class="nav-link text-center bottombar-nav-links ">
+                            <img src="./img/sidebar/newadmin-dashboard.svg" class="Bottombar-icons"
+                                style="width: 18px; height: 18px;">
+                        </a>
+                        <a href="#" class="nav-link text-center bottombar-nav-links">
+                            <img src="./img/sidebar/newadmin-post.svg" class="Bottombar-icons"
+                                style="width: 18px; height: 18px;">
+                        </a>
+                        <a href="#" class="nav-link text-center bottombar-nav-links">
+                            <img src="./img/sidebar/newadmin-comment.svg" class="Bottombar-icons"
+                                style="width: 18px; height: 18px;">
+                        </a>
+                        
+
+
+
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="col-lg-6 col-md-7 lefti-brdr px-lg-0" style="margin-top: 10px;">
+                <!-- for post creation head started here-->
+                <div class="share-box container py-3 px-sm-5 px-2 rounded-4 border gap-2">
+                 <div class="d-flex gap-2 align-items-center ">
+                        <img src="./img/avatars/avatar-2.jpg"
+                            style="width: 28px; height: 28px; border-radius: 50%;">
+                        <input type="text" class="form-control py-2 px-2 rounded-4 search-input" type="button"  data-bs-toggle="modal" data-bs-target=".simplepost_modal" placeholder="What's on your mind?">
+                   </div> 
+                   <div class="d-flex share-box-posts justify-content-between mt-3 align-items-center">
+                    <a href="" class="d-flex gap-2 align-items-center" type="button" data-bs-toggle="modal" data-bs-target=".photopost_modal"><img src="./img/Home/camera-icon.jpg"  alt=""> Photo</a>
+                    <a href="" class="d-flex gap-2 align-items-center" type="button"  data-bs-toggle="modal" data-bs-target=".videopost_modal"> <img src="./img/Home/video-cam-icon.png" alt=""> Video</a>
+                    <a href="" class="d-flex gap-2 align-items-center" type="button"  data-bs-toggle="modal" data-bs-target="#donationModal"><img src="./img/Home/images.png"  alt=""> Donation</a>
+                   </div>
+    
+                </div>
+                <!-- for post creation head ended here-->
+                <!--####### images post started here ########-->
+                <div class="images-post px-sm-3 px-1 mt-4">
+                    <section>
+                        
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div>
+                                    <a href="./profile.html">
+                                        <img src="./img/avatars/avatar-2.jpg"
+                                            style="width: 28px; height: 28px; border-radius: 50%;">
+                                    </a>
+                                </div>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <a href="./profile.html" style="text-decoration: none !important;">
+                                        <p class="mb-0 timeline-profile-name">fakhrinaufal</p>
+                                    </a>
+                                    <div>
+                                        <img src="./img/Home/leafe.svg">
+                                    </div>
+                                    <div>
+                                        <p class="m-ago mb-0">6m ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 1 -->
+                            <div class="menu-container position-relative">
+                                <div class="dots-icon">⋯</div>
+                                <div class="options-menu">
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/rprt.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Post Detail
+                                    </a>
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/rprt.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Report
+                                    </a>
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/copiii.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Copy Link
+                                    </a>
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/embed-icon.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Embed
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div>
+                        <p class="mb-1 thanks-p mt-2">Just hit 3,000+ followers on X! Thanks for being here
+                            and letting me share my work with you.
+                        </p>
+                    </div>
+                    <!-- ********************Timeline carousel start*********************** -->
+                    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/Home/caroselllll-123.png">
+                                <span class="badge">1/5</span>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/Home/caroselllll-123.png" class="d-block w-100"
+                                    alt="Landscape 2">
+                                <span class="badge ">2/5</span>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/Home/caroselllll-123.png" class="d-block w-100"
+                                    alt="Landscape 3">
+                                <span class="badge ">3/5</span>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/Home/caroselllll-123.png" class="d-block w-100"
+                                    alt="Landscape 4">
+                                <span class="badge ">4/5</span>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/Home/caroselllll-123.png" class="d-block w-100"
+                                    alt="Landscape 5">
+                                <span class="badge ">5/5</span>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="carousel-indicators" style=" border-radius: 99px;
+                    background: #18181880; backdrop-filter: blur(12px);  ">
+                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                    </div>
+                    <!-- ********************Timeline carousel end*********************** -->
+                       <!-- liked by -->
+                       <div class="post-footer d-flex justify-content-between align-items-center mt-2">
+                        <div class="liked-by">
+                            <div class="profile-images-ok">
+                                <img src="./img/avatars/avatar-3.jpg" alt="Profile 1" />
+                                <img src="./img/avatars/avatar-4.jpg" alt="Profile 2" />
+                                <img src="./img/avatars/avatar-5.jpg" alt="Profile 3" />
+                            </div>
+                            <div class="text-liked-by">
+                                Liked by <span class="px-1 text-liked-by1"> kriibooo </span> and
+                                <span class="ps-1 text-liked-by1"> 10 others</span>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Reactions Section -->
+                     <div class="position-relative">
+                        <div class="reactions">
+                            <div class="d-flex gap-2">
+                                <div class="reaction1">
+                                    <!-- Replace with your comment SVG -->
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_160_109672)">
+                                            <path
+                                                d="M14.3219 12.2375L14.25 12.1656L13.7313 11.6469C14.0781 11.2125 14.2094 10.6656 14.1313 10.1438C14.1313 10.1344 14.1281 10.125 14.125 10.1156C14.1219 10.1031 14.1219 10.0938 14.1188 10.0813C14.1156 10.0406 14.1 9.97815 14.075 9.8969C14.0625 9.85627 14.05 9.81877 14.0375 9.77815C13.7594 8.96252 12.8969 6.86877 13.0469 4.80627C13.05 4.34377 12.7406 3.92502 12.3031 3.95002C11.8656 3.97502 11.0688 4.20315 11.025 6.26565C11.0188 6.6469 10.9656 6.83127 10.9813 7.14377L5.99063 2.15315C5.66563 1.82815 5.15001 1.8219 4.82501 2.1469C4.50001 2.4719 4.50001 3.00002 4.82188 3.3219L7.77501 6.27502C7.77813 6.27815 7.77813 6.28127 7.78126 6.28127C8.05626 6.55627 7.72501 6.93752 7.43438 6.7719L3.90001 3.24065C3.57501 2.91565 3.05938 2.9094 2.73438 3.2344C2.40938 3.56252 2.40626 4.08752 2.73126 4.41252L6.27501 7.95627C6.44688 8.21565 6.11876 8.52815 5.86251 8.31877L2.76876 5.22502C2.44376 4.90002 1.92813 4.89377 1.60313 5.21877C1.27813 5.54377 1.27501 6.06877 1.60001 6.39377L4.64688 9.44065C4.65001 9.4469 4.65626 9.45627 4.66563 9.46565C4.93126 9.73127 4.61563 10.0969 4.33438 9.94377L2.15313 7.76252C1.82813 7.43752 1.31251 7.43127 0.987506 7.75627C0.662506 8.08127 0.659381 8.60627 0.984381 8.93127L6.11251 14.0625C7.15626 15.1063 8.66563 15.3906 9.96563 14.9219L10.125 15.0813L10.8 15.7563C11.125 16.0813 11.65 16.0813 11.975 15.7563L14.3219 13.4094C14.6469 13.0875 14.6469 12.5594 14.3219 12.2375Z"
+                                                fill="#CC824C" />
+                                            <path
+                                                d="M12.3094 1.03027C12.3 1.00215 12.2812 0.980273 12.2531 0.970898L11.3187 0.630273C11.2906 0.620898 11.2625 0.624023 11.2375 0.639648C11.2125 0.655273 11.2 0.680273 11.1969 0.708398L11.0531 2.5584C11.05 2.59902 11.075 2.63652 11.1125 2.64902C11.1219 2.65215 11.1344 2.65527 11.1437 2.65527C11.1719 2.65527 11.2 2.64277 11.2187 2.61777L12.2969 1.1084C12.3156 1.08652 12.3187 1.0584 12.3094 1.03027Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M14.2188 2.83125L13.8 1.93125C13.7875 1.90625 13.7656 1.8875 13.7375 1.88125C13.7094 1.875 13.6813 1.88125 13.6594 1.9L12.25 3.10625C12.2188 3.13125 12.2094 3.175 12.2281 3.2125C12.2438 3.24375 12.275 3.26562 12.3094 3.26562H12.325L14.1531 2.9625C14.1813 2.95938 14.2063 2.94063 14.2188 2.91563C14.2313 2.8875 14.2313 2.85625 14.2188 2.83125Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M9.81249 2.35864L9.50936 0.530511C9.50624 0.502386 9.48749 0.477386 9.46249 0.464886C9.43749 0.452386 9.40936 0.452386 9.38124 0.461761L8.48124 0.880511C8.45624 0.893011 8.43749 0.914886 8.43124 0.943011C8.42499 0.971136 8.43124 0.999261 8.44999 1.02114L9.65624 2.43364C9.67499 2.45551 9.69999 2.46489 9.72499 2.46489C9.73749 2.46489 9.74999 2.46176 9.76249 2.45551C9.79999 2.43989 9.81874 2.39926 9.81249 2.35864Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M16.1375 12.2375L15.5469 11.6469C15.8937 11.2125 16.025 10.6656 15.9469 10.1438C15.9469 10.1344 15.9437 10.125 15.9406 10.1156C15.9375 10.1031 15.9375 10.0938 15.9344 10.0813C15.9312 10.0406 15.9156 9.97815 15.8906 9.8969C15.8781 9.85627 15.8656 9.81877 15.8531 9.77815C15.575 8.96252 14.7125 6.86877 14.8625 4.80627C14.8656 4.34377 14.5562 3.92502 14.1187 3.95002C13.6812 3.97502 12.8844 4.20315 12.8406 6.26565C12.8344 6.6469 12.7812 6.83127 12.7969 7.14377L7.80624 2.15315C7.48124 1.82815 6.96562 1.8219 6.64062 2.1469C6.31562 2.4719 6.31562 3.00002 6.63749 3.3219L9.59062 6.27502C9.59374 6.27815 9.59374 6.28127 9.59687 6.28127C9.87187 6.55627 9.54062 6.93752 9.24999 6.7719L5.71562 3.24065C5.39062 2.91565 4.87499 2.9094 4.54999 3.2344C4.22499 3.5594 4.22187 4.0844 4.54687 4.4094L8.09062 7.95315C8.26249 8.21252 7.93437 8.52502 7.67812 8.31565L4.58437 5.2219C4.25937 4.8969 3.74374 4.89065 3.41874 5.21565C3.09374 5.54065 3.09062 6.06565 3.41562 6.39065L6.46249 9.43752C6.46562 9.44377 6.47187 9.45315 6.48124 9.46252C6.74687 9.72815 6.43124 10.0938 6.14999 9.94065L3.96874 7.7594C3.64374 7.4344 3.12812 7.42815 2.80312 7.75315C2.47812 8.07815 2.47499 8.60315 2.79999 8.92815L7.92812 14.0625C8.97187 15.1063 10.4812 15.3906 11.7812 14.9219L12.6156 15.7563C12.9406 16.0813 13.4656 16.0813 13.7906 15.7563L16.1375 13.4094C16.4625 13.0875 16.4625 12.5594 16.1375 12.2375Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M15.5406 11.6367C15.4937 11.7023 15.4469 11.7617 15.4 11.8086L13.6125 13.593V13.5836L13.1375 14.0617C12.7406 14.4586 12.2781 14.743 11.7844 14.9211L12.5281 15.6648C12.6906 15.6148 12.8281 15.5461 12.9156 15.4586L15.85 12.5242C15.9344 12.4398 16.0062 12.3117 16.0656 12.1617L15.5406 11.6367Z"
+                                                fill="#B46D39" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_160_109672">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    123
+                                </div>
+                                <div class="reaction1">
+                                    <!-- Replace with your refresh SVG -->
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.52042 1.21548C7.49193 1.1509 8.50739 1.15076 9.48088 1.21548C12.5253 1.41785 14.9408 3.87538 15.1394 6.94856C15.1766 7.5235 15.1766 8.11821 15.1394 8.69316C14.9408 11.7663 12.5253 14.2239 9.48088 14.4262C8.50739 14.491 7.49193 14.4908 6.52042 14.4262C6.1438 14.4012 5.73383 14.3122 5.37291 14.1635C5.21419 14.0981 5.10643 14.0539 5.02759 14.025C4.97338 14.0623 4.90137 14.1152 4.79652 14.1925C4.26823 14.5821 3.60126 14.8553 2.65477 14.8323L2.62428 14.8316C2.44168 14.8272 2.24706 14.8226 2.08833 14.7918C1.89715 14.7549 1.66063 14.6624 1.51259 14.41C1.35147 14.1353 1.41607 13.8575 1.47857 13.6826C1.53756 13.5175 1.63981 13.3238 1.74427 13.126L1.75859 13.0989C2.06947 12.5097 2.15608 12.0283 1.98985 11.7073C1.43497 10.8697 0.935801 9.8374 0.861852 8.69316C0.824695 8.11821 0.824695 7.5235 0.861852 6.94856C1.06046 3.87538 3.47599 1.41785 6.52042 1.21548ZM5.16732 6.33366C5.16732 6.6098 5.39117 6.83366 5.66732 6.83366H8.00065C8.27679 6.83366 8.50065 6.6098 8.50065 6.33366C8.50065 6.05752 8.27679 5.83366 8.00065 5.83366H5.66732C5.39117 5.83366 5.16732 6.05752 5.16732 6.33366ZM5.16732 9.66699C5.16732 9.94313 5.39117 10.167 5.66732 10.167H10.334C10.6101 10.167 10.834 9.94313 10.834 9.66699C10.834 9.39085 10.6101 9.16699 10.334 9.16699H5.66732C5.39117 9.16699 5.16732 9.39085 5.16732 9.66699Z"
+                                            fill="#71747F" />
+                                    </svg>
+                                    123
+                                </div>
+                                <div class="repost-container">
+                                    <div class="reaction1 repost-icon" onclick="toggleRepostMenu(event)">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.60535 4.20312C1.30889 3.98478 1.24556 3.56744 1.4639 3.27098L1.46579 3.26848C1.50382 3.21813 1.61143 3.07566 1.67379 2.99576C1.80009 2.83392 1.97494 2.6159 2.16594 2.39593C2.35406 2.17926 2.57096 1.94542 2.78025 1.7605C2.88413 1.66871 3.00186 1.57486 3.12547 1.50034C3.23078 1.43686 3.42681 1.33301 3.66737 1.33301C3.90793 1.33301 4.10396 1.43686 4.20928 1.50034C4.33289 1.57486 4.45062 1.66872 4.5545 1.7605C4.76379 1.94542 4.98069 2.17927 5.1688 2.39594C5.3598 2.61591 5.53465 2.83394 5.66094 2.99577C5.7234 3.07581 5.83119 3.21852 5.86905 3.26864L5.87075 3.27089C6.08909 3.56736 6.02583 3.9848 5.72936 4.20314C5.61177 4.28974 5.47516 4.33203 5.3395 4.33303H4.33407L4.33407 9.66638C4.33407 11.7807 5.83251 13.3331 8.00073 13.3331C8.36892 13.3331 8.6674 13.6315 8.6674 13.9997C8.6674 14.3679 8.36892 14.6664 8.00073 14.6664C5.08233 14.6664 3.00073 12.5032 3.00073 9.66639L3.00073 4.33303H2.00069C1.86323 4.33314 1.72452 4.29089 1.60535 4.20312Z" fill="#71747F"/>
+                                            <path d="M8.00065 1.33309C10.9191 1.33309 13.0007 3.49632 13.0007 6.33309V11.6664H13.9978C14.1362 11.6657 14.276 11.7079 14.396 11.7963C14.6924 12.0146 14.7558 12.432 14.5374 12.7284L14.5356 12.7308C14.4977 12.781 14.39 12.9237 14.3276 13.0037C14.2013 13.1655 14.0264 13.3835 13.8354 13.6035C13.6473 13.8202 13.4304 14.054 13.2211 14.2389C13.1172 14.3307 12.9995 14.4246 12.8759 14.4991C12.7706 14.5626 12.5745 14.6664 12.334 14.6664C12.0934 14.6664 11.8974 14.5626 11.7921 14.4991C11.6685 14.4246 11.5507 14.3307 11.4469 14.2389C11.2376 14.054 11.0207 13.8202 10.8326 13.6035C10.6416 13.3835 10.4667 13.1655 10.3404 13.0037C10.278 12.9237 10.1703 12.7811 10.1323 12.7309L10.1306 12.7286C9.91225 12.4321 9.9755 12.0147 10.272 11.7963C10.3911 11.7085 10.5298 11.6663 10.6673 11.6664H11.6673V6.33309C11.6673 4.21882 10.1689 2.66642 8.00065 2.66642C7.63246 2.66642 7.33398 2.36795 7.33398 1.99976C7.33398 1.63157 7.63246 1.33309 8.00065 1.33309Z" fill="#71747F"/>
+                                        </svg>
+                                        123
+                                    </div>
+                                
+                                    <!-- Repost Dropdown Menu -->
+                                    <div class="repost-dropdown">
+                                        <a href="#" class="repost-option">Repost</a>
+                                        <a href="#" class="repost-option">Quote Repost</a>
+                                    </div>
+                                </div>
+                                <script>
+                                    function toggleRepostMenu(event) {
+                                        event.stopPropagation();
+                                        const menu = event.currentTarget.nextElementSibling;
+                                
+                                        // Close all other dropdowns before opening a new one
+                                        document.querySelectorAll(".repost-dropdown").forEach(m => {
+                                            if (m !== menu) {
+                                                m.style.display = "none";
+                                            }
+                                        });
+                                
+                                        // Toggle current menu visibility
+                                        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+                                    }
+                                
+                                    // Close dropdown when clicking outside
+                                    window.addEventListener("click", () => {
+                                        document.querySelectorAll(".repost-dropdown").forEach(menu => {
+                                            menu.style.display = "none";
+                                        });
+                                    });
+                                </script>
+                                <div class="reaction1">
+                                    <!-- Replace with your heart SVG -->
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3976 1.69537C14.0859 1.35978 13.5973 1.23408 13.1306 1.18909C12.6401 1.14181 12.0527 1.17325 11.4202 1.2562C10.1518 1.42257 8.61951 1.80767 7.14749 2.2815C5.67455 2.75562 4.23878 3.32609 3.16352 3.87264C2.62838 4.14464 2.16424 4.41987 1.82683 4.68423C1.65881 4.81587 1.5055 4.95766 1.39017 5.10857C1.28017 5.25252 1.16444 5.45732 1.16603 5.70421C1.17021 6.35226 1.61154 6.81026 2.08153 7.11768C2.56124 7.43146 3.18601 7.6679 3.80709 7.85311C4.43484 8.04031 5.09499 8.18539 5.66251 8.30297C5.69969 8.31068 5.77403 8.32605 5.86513 8.34487C6.20817 8.41576 6.37969 8.4512 6.54093 8.40294C6.70216 8.35468 6.82612 8.23072 7.07403 7.98281L9.52794 5.52892C9.78829 5.26857 10.2104 5.26857 10.4707 5.52892C10.7311 5.78927 10.7311 6.21138 10.4707 6.47173L8.18232 8.76015C7.92962 9.01284 7.80327 9.13919 7.75546 9.30319C7.70764 9.46719 7.7462 9.64127 7.82332 9.98943C8.12231 11.3393 8.38188 12.4546 8.64088 13.2051C8.79215 13.6434 8.96234 14.0228 9.17789 14.3025C9.40284 14.5945 9.7088 14.8151 10.1115 14.8329C10.3623 14.844 10.5707 14.7295 10.7137 14.6233C10.8644 14.5114 11.006 14.3613 11.1374 14.1972C11.4014 13.8673 11.6788 13.4109 11.9548 12.8835C12.5095 11.8234 13.0968 10.4022 13.5938 8.94006C14.0905 7.47852 14.5045 5.95406 14.7039 4.68706C14.8033 4.05519 14.8525 3.46837 14.8252 2.97684C14.7993 2.5107 14.7 2.02103 14.3976 1.69537Z"
+                                            fill="#71747F" />
+                                    </svg>
+                                    123
+                                </div>
+                            </div>
+                            <div class="bookmark1">
+                                <!-- Replace with your bookmark SVG -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03575 0.833008C9.26196 0.832999 10.2314 0.832991 10.9896 0.931213C11.7679 1.03203 12.399 1.24416 12.8985 1.72543C13.4007 2.20921 13.6244 2.82463 13.7303 3.58317C13.8327 4.31734 13.8327 5.25439 13.8327 6.43264V12.0302C13.8327 12.7619 13.8327 13.3699 13.7625 13.8267C13.6898 14.2993 13.5203 14.7594 13.053 15.0089C12.6362 15.2315 12.1778 15.1862 11.7891 15.0682C11.3959 14.9489 10.9963 14.7323 10.6305 14.5011C10.2611 14.2677 9.86189 13.9742 9.547 13.7415C9.23845 13.5134 8.99064 13.3302 8.80142 13.2163C8.53505 13.0559 8.36685 12.9553 8.23051 12.8911C8.10468 12.8318 8.04355 12.8224 7.99935 12.8224C7.95515 12.8224 7.89403 12.8318 7.76819 12.8911C7.63185 12.9553 7.46366 13.0559 7.19728 13.2163C7.00807 13.3302 6.76025 13.5134 6.45171 13.7415C6.13681 13.9742 5.73761 14.2677 5.36825 14.5011C5.00237 14.7323 4.60277 14.9489 4.20964 15.0682C3.82095 15.1862 3.36252 15.2315 2.94573 15.0089C2.47839 14.7594 2.30894 14.2993 2.23623 13.8267C2.16597 13.3699 2.16599 12.7619 2.16602 12.0303L2.16602 6.43263C2.16601 5.25438 2.166 4.31734 2.26845 3.58317C2.3743 2.82463 2.59801 2.20921 3.10016 1.72543C3.59969 1.24416 4.23076 1.03203 5.00907 0.931213C5.76735 0.832991 6.73674 0.832999 7.96296 0.833008H8.03575Z"
+                                        fill="#71747F" />
+                                </svg>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <!-- cmnts -->
+                    <div>
+                        <p class="mb-0 see-all-txt mt-2">See all 7 comments</p>
+                        <p class="cmnt-person-name  mb-0">alenamakarov <span class="cmnt-person-name1">Lets
+                                goo!</span>
+                        </p>
+                        <!-- <div class="d-flex align-items-center gap-1">
+                            <img src="../asset/images/Avatar.png" style="width: 18px; height: 18px;">
+                            <input type="text" class="form-control add-input" placeholder="Add a comment..."
+                                style="border: none; box-shadow: none; outline: none;">
+                        </div> -->
+                        <!-- cmnt sec -->
+                        <section>
+
+
+                            <div
+                                class="d-flex justify-content-center align-items-center gap-1 gap-sm-2 my-4">
+                                <div class="pf_cont">
+                                    <img src="./img/avatars/avatar-2.jpg" alt="Profile" class="profile-img">
+                                </div>
+
+                                <div class="comment-container flex-shrink-1" id="commentContainer">
+                                    <textarea class="comment-input" placeholder="Comment" id="commentInput"
+                                        style="font-size: 12.5px;"></textarea>
+
+                                    <!-- Send button with icon, positioned fixed within the container -->
+                                    <a href="./cmnt-images.html">
+                                        <div class="green-subscribed-bg" id="sendButton">
+                                            <img src="./img/Home/white-send.svg" alt="Send">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="send-icon d-flex align-items-center me-2">
+                                    <label for="img_inp">
+                                        <img src="./img/Home/icon_file.png" alt="Upload Icon">
+                                    </label>
+                                    <input type="file" class="img_input_field" hidden accept="image/*"
+                                        id="img_inp">
+                                </div>
+                            </div>
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    const commentInput = document.getElementById("commentInput");
+                                    const sendButton = document.getElementById("sendButton");
+                                    const commentContainer = document.getElementById("commentContainer");
+
+                                    // Add focus event to show green border and send icon
+                                    commentInput.addEventListener("focus", () => {
+                                        commentContainer.classList.add("active");
+                                        sendButton.classList.add("active");
+                                    });
+
+                                    // Add blur event to revert changes when not typing
+                                    commentInput.addEventListener("blur", () => {
+                                        if (commentInput.value.trim() === "") {
+                                            commentContainer.classList.remove("active");
+                                            sendButton.classList.remove("active");
+                                        }
+                                    });
+
+                                    // Adjust container height dynamically based on input content
+                                    commentInput.addEventListener("input", () => {
+                                        commentInput.style.height = "30px"; // Reset height
+                                        commentInput.style.height = commentInput.scrollHeight + "px"; // Grow as per content
+
+                                        // Check if content exceeds max-height and activate scrollbar
+                                        if (commentInput.scrollHeight > 100) {
+                                            commentContainer.style.overflowY = "scroll";
+                                            commentInput.style.height = "100px"; // Set to max-height
+                                        } else {
+                                            commentContainer.style.overflowY = "hidden";
+                                        }
+                                    });
+                                });
+                            </script>
+
+                        </section>
+
+                        <!-- cmnt sec -->
+                    </div>
+                </div>
+                <!--######### images post ended here #########-->
+                <!--####### video post started here ########-->
+                 <div class="video-post px-sm-3 px-1 mt-4">
+                      <!-- video post start -->
+                      <div class="video-container mt-3">
+                        <video id="myVideo" class="w-100" loop muted autoplay playsinline>
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay"></div>
+                        <div class="user-info">
+                            <img src="./img/avatars/avatar-2.jpg" alt="User Avatar" class=""
+                                style="width: 28px; height: 28px; margin-right: 10px; border-radius: 50%;" />
+                            <div class="d-flex">
+                                <span class="text-white fw-bold text-shadow">fakhrinaufal
+                                    <svg width="11" height="14" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.22917 3.58066C3.22917 2.0199 4.45579 0.729004 6 0.729004C7.54421 0.729004 8.77083 2.0199 8.77083 3.58066C8.77083 3.81915 8.74231 4.05118 8.68847 4.27317C10.2088 4.30691 11.6875 5.53143 11.6875 7.20191C11.6875 8.29159 11.1381 9.10909 10.3653 9.58185C9.60561 10.0467 8.63519 10.1782 7.75024 9.94713C7.64073 9.91854 7.54779 9.89434 7.46852 9.87447C7.50315 9.99158 8.03648 11.1554 8.09559 11.3003C8.21888 11.5535 8.32937 11.7804 8.39226 11.9657C8.45315 12.145 8.52112 12.4254 8.36205 12.6886C8.24238 12.8866 8.03879 12.9916 7.88731 13.0511C7.72022 13.1169 7.5244 13.1621 7.32327 13.1941C6.91868 13.2584 6.42744 13.2787 5.95214 13.2679C5.4758 13.2571 4.99588 13.2145 4.61137 13.1456C4.42057 13.1114 4.23977 13.0684 4.09013 13.014C4.01546 12.9868 3.93725 12.9528 3.86559 12.909C3.79935 12.8685 3.70498 12.7995 3.63795 12.6886C3.47888 12.4254 3.54684 12.145 3.60774 11.9657C3.67062 11.7804 3.78111 11.5535 3.90439 11.3003C3.9635 11.1555 4.49684 9.99158 4.53148 9.87447C4.45221 9.89434 4.35926 9.91854 4.24975 9.94713C3.36358 10.1785 2.39313 10.0533 1.63273 9.58994C0.858532 9.11815 0.3125 8.29902 0.3125 7.20191C0.3125 5.52041 1.78888 4.3024 3.31127 4.2721C3.2576 4.05044 3.22917 3.81877 3.22917 3.58066Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <small class="text-white-50 d-block text-shadow"
+                                    style="margin-left: 7px; margin-top: 2.5px;">6m ago</small>
+                            </div>
+                        </div>
+                        <div class="menu-dots">
+                            <button class="btn text-white" onclick="toggleVideoMenu()">
+                                <svg width="12" height="4" viewBox="0 0 12 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.00065 0.833496C1.35632 0.833496 0.833984 1.35583 0.833984 2.00016C0.833984 2.6445 1.35632 3.16683 2.00065 3.16683H2.00664C2.65097 3.16683 3.17331 2.6445 3.17331 2.00016C3.17331 1.35583 2.65097 0.833496 2.00664 0.833496H2.00065Z"
+                                        fill="white" />
+                                    <path
+                                        d="M4.83154 2.00016C4.83154 1.35583 5.35388 0.833496 5.99821 0.833496H6.0042C6.64853 0.833496 7.17086 1.35583 7.17086 2.00016C7.17086 2.6445 6.64853 3.16683 6.0042 3.16683H5.99821C5.35388 3.16683 4.83154 2.6445 4.83154 2.00016Z"
+                                        fill="white" />
+                                    <path
+                                        d="M8.83415 2.00016C8.83415 1.35583 9.35648 0.833496 10.0008 0.833496H10.0068C10.6511 0.833496 11.1735 1.35583 11.1735 2.00016C11.1735 2.6445 10.6511 3.16683 10.0068 3.16683H10.0008C9.35648 3.16683 8.83415 2.6445 8.83415 2.00016Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Options Menu -->
+                        <div class="options-menu" id="video-menu">
+                            <!-- <a href="#" class="option">Option 1</a> -->
+                            <!-- <a href="#" class="option">Option 2</a> -->
+                            <!-- <a href="./postdetail-video.html" class="option">Post Detail</a> -->
+                            <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1 "
+                                data-bs-toggle="modal" data-bs-target="#embedModal">
+                                <img src="../asset/images/rprt.svg" class="me-2"
+                                    style="width: 13px !important; height: 13px !important;" alt="">Post
+                                Detail</a>
+                            <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1 "
+                                data-bs-toggle="modal" data-bs-target="#embedModal">
+                                <img src="../asset/images/rprt.svg" class="me-2"
+                                    style="width: 13px !important; height: 13px !important;" alt="">
+                                Report</a>
+                            <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1 py-2"
+                                data-bs-toggle="modal" data-bs-target="#embedModal">
+                                <img src="../asset/images/copiii.svg" class="me-2"
+                                    style="width: 13px !important; height: 13px !important;" alt="">
+                                Copy Link</a>
+                            <a href="" class="option d-flex align-items-center px-1" data-bs-toggle="modal"
+                                data-bs-target="#embvideodd-modal">
+                                <img src="../asset/images/embed-icon.svg" class="me-2"
+                                    style="width: 13px !important; height: 13px !important;" alt="">
+                                Embed
+                            </a>
+
+
+
+
+                        </div>
+                        <script>
+                            function toggleVideoMenu() {
+                                const menu = document.getElementById("video-menu");
+                                menu.classList.toggle("show");
+                            }
+                        </script>
+
+
+                        <div class="video-controls">
+                            <span id="currentTime" class="text-white text-shadow">00:00</span>
+                            <button id="muteToggle" class="btn text-white">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.861278 0.861766C1.12163 0.601417 1.54374 0.601417 1.80409 0.861766L15.1374 14.1951C15.3978 14.4554 15.3978 14.8776 15.1374 15.1379C14.8771 15.3983 14.455 15.3983 14.1946 15.1379L9.83061 10.7739C9.82548 11.3986 9.80832 11.9223 9.75095 12.3367C9.67107 12.9134 9.48615 13.4998 8.91068 13.7432C8.32983 13.9888 7.78497 13.7032 7.32706 13.3515C6.85879 12.9918 6.26373 12.3842 5.56377 11.6694C5.20413 11.3022 4.96549 11.1247 4.72377 11.0248C4.48082 10.9244 4.18544 10.8817 3.67014 10.8817C3.22447 10.8818 2.82577 10.8818 2.52388 10.8504C2.20724 10.8175 1.91327 10.7459 1.64882 10.5655C1.14495 10.2217 0.952126 9.71831 0.879064 9.25567C0.824583 8.9107 0.830836 8.53192 0.835872 8.22682V7.77491C0.830836 7.4698 0.824583 7.09103 0.879064 6.74606C0.952126 6.28341 1.14495 5.78003 1.64882 5.43625C1.91327 5.25582 2.20724 5.18422 2.52388 5.15132C2.82577 5.11997 3.22447 5.11998 3.67014 5.11999C3.86002 5.11999 4.02003 5.1142 4.15857 5.10187L0.861278 1.80458C0.600928 1.54423 0.600928 1.12212 0.861278 0.861766Z"
+                                        fill="white" />
+                                    <path
+                                        d="M7.32706 2.65023C7.78497 2.29851 8.32983 2.01289 8.91068 2.25856C9.48615 2.50196 9.67107 3.08828 9.75095 3.66507C9.83281 4.25623 9.8328 5.07022 9.83278 6.08227V6.5114C9.83278 6.92238 9.83278 7.12787 9.70932 7.17901C9.58586 7.23015 9.44055 7.08485 9.14994 6.79424L6.40313 4.04742C6.26982 3.91411 6.20316 3.84746 6.20347 3.76418C6.20378 3.68091 6.27038 3.61529 6.40358 3.48405C6.75013 3.1426 7.05932 2.85589 7.32706 2.65023Z"
+                                        fill="white" />
+                                    <path
+                                        d="M13.8 4.85774C13.5375 4.59963 13.1154 4.60325 12.8573 4.86583C12.5992 5.1284 12.6028 5.5505 12.8654 5.8086C13.592 6.52289 13.9994 7.40199 13.9994 8.33317C13.9994 8.98229 13.8023 9.60164 13.4404 10.1585C13.2397 10.4672 13.3274 10.8801 13.6361 11.0808C13.9448 11.2814 14.3577 11.1938 14.5584 10.885C15.0486 10.1308 15.3327 9.26179 15.3327 8.33317C15.3327 6.99124 14.7411 5.7828 13.8 4.85774Z"
+                                        fill="white" />
+                                    <path
+                                        d="M11.8479 6.24342C11.6143 5.95888 11.1942 5.91763 10.9096 6.15129C10.6251 6.38495 10.5838 6.80504 10.8175 7.08958C11.1482 7.49238 11.3327 7.97134 11.3327 8.47949C11.3327 8.4839 11.3327 8.4883 11.3327 8.49269C11.3326 8.49892 11.3326 8.50514 11.3325 8.51136C11.3269 8.8795 11.6208 9.18246 11.989 9.18804C12.3571 9.19361 12.6601 8.89968 12.6656 8.53154C12.6659 8.51421 12.666 8.49686 12.666 8.47949C12.666 7.63559 12.3566 6.86286 11.8479 6.24342Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                     <!-- liked by -->
+                     <div class="post-footer d-flex justify-content-between align-items-center mt-2">
+                        <div class="liked-by">
+                            <div class="profile-images-ok">
+                                <img src="./img/avatars/avatar-3.jpg" alt="Profile 1" />
+                                <img src="./img/avatars/avatar-4.jpg" alt="Profile 2" />
+                                <img src="./img/avatars/avatar-5.jpg" alt="Profile 3" />
+                            </div>
+                            <div class="text-liked-by">
+                                Liked by <span class="px-1 text-liked-by1"> kriibooo </span> and
+                                <span class="ps-1 text-liked-by1"> 10 others</span>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Reactions Section -->
+                     <div class="position-relative">
+                        <div class="reactions">
+                            <div class="d-flex gap-2">
+                                <div class="reaction1">
+                                    <!-- Replace with your comment SVG -->
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_160_109672)">
+                                            <path
+                                                d="M14.3219 12.2375L14.25 12.1656L13.7313 11.6469C14.0781 11.2125 14.2094 10.6656 14.1313 10.1438C14.1313 10.1344 14.1281 10.125 14.125 10.1156C14.1219 10.1031 14.1219 10.0938 14.1188 10.0813C14.1156 10.0406 14.1 9.97815 14.075 9.8969C14.0625 9.85627 14.05 9.81877 14.0375 9.77815C13.7594 8.96252 12.8969 6.86877 13.0469 4.80627C13.05 4.34377 12.7406 3.92502 12.3031 3.95002C11.8656 3.97502 11.0688 4.20315 11.025 6.26565C11.0188 6.6469 10.9656 6.83127 10.9813 7.14377L5.99063 2.15315C5.66563 1.82815 5.15001 1.8219 4.82501 2.1469C4.50001 2.4719 4.50001 3.00002 4.82188 3.3219L7.77501 6.27502C7.77813 6.27815 7.77813 6.28127 7.78126 6.28127C8.05626 6.55627 7.72501 6.93752 7.43438 6.7719L3.90001 3.24065C3.57501 2.91565 3.05938 2.9094 2.73438 3.2344C2.40938 3.56252 2.40626 4.08752 2.73126 4.41252L6.27501 7.95627C6.44688 8.21565 6.11876 8.52815 5.86251 8.31877L2.76876 5.22502C2.44376 4.90002 1.92813 4.89377 1.60313 5.21877C1.27813 5.54377 1.27501 6.06877 1.60001 6.39377L4.64688 9.44065C4.65001 9.4469 4.65626 9.45627 4.66563 9.46565C4.93126 9.73127 4.61563 10.0969 4.33438 9.94377L2.15313 7.76252C1.82813 7.43752 1.31251 7.43127 0.987506 7.75627C0.662506 8.08127 0.659381 8.60627 0.984381 8.93127L6.11251 14.0625C7.15626 15.1063 8.66563 15.3906 9.96563 14.9219L10.125 15.0813L10.8 15.7563C11.125 16.0813 11.65 16.0813 11.975 15.7563L14.3219 13.4094C14.6469 13.0875 14.6469 12.5594 14.3219 12.2375Z"
+                                                fill="#CC824C" />
+                                            <path
+                                                d="M12.3094 1.03027C12.3 1.00215 12.2812 0.980273 12.2531 0.970898L11.3187 0.630273C11.2906 0.620898 11.2625 0.624023 11.2375 0.639648C11.2125 0.655273 11.2 0.680273 11.1969 0.708398L11.0531 2.5584C11.05 2.59902 11.075 2.63652 11.1125 2.64902C11.1219 2.65215 11.1344 2.65527 11.1437 2.65527C11.1719 2.65527 11.2 2.64277 11.2187 2.61777L12.2969 1.1084C12.3156 1.08652 12.3187 1.0584 12.3094 1.03027Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M14.2188 2.83125L13.8 1.93125C13.7875 1.90625 13.7656 1.8875 13.7375 1.88125C13.7094 1.875 13.6813 1.88125 13.6594 1.9L12.25 3.10625C12.2188 3.13125 12.2094 3.175 12.2281 3.2125C12.2438 3.24375 12.275 3.26562 12.3094 3.26562H12.325L14.1531 2.9625C14.1813 2.95938 14.2063 2.94063 14.2188 2.91563C14.2313 2.8875 14.2313 2.85625 14.2188 2.83125Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M9.81249 2.35864L9.50936 0.530511C9.50624 0.502386 9.48749 0.477386 9.46249 0.464886C9.43749 0.452386 9.40936 0.452386 9.38124 0.461761L8.48124 0.880511C8.45624 0.893011 8.43749 0.914886 8.43124 0.943011C8.42499 0.971136 8.43124 0.999261 8.44999 1.02114L9.65624 2.43364C9.67499 2.45551 9.69999 2.46489 9.72499 2.46489C9.73749 2.46489 9.74999 2.46176 9.76249 2.45551C9.79999 2.43989 9.81874 2.39926 9.81249 2.35864Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M16.1375 12.2375L15.5469 11.6469C15.8937 11.2125 16.025 10.6656 15.9469 10.1438C15.9469 10.1344 15.9437 10.125 15.9406 10.1156C15.9375 10.1031 15.9375 10.0938 15.9344 10.0813C15.9312 10.0406 15.9156 9.97815 15.8906 9.8969C15.8781 9.85627 15.8656 9.81877 15.8531 9.77815C15.575 8.96252 14.7125 6.86877 14.8625 4.80627C14.8656 4.34377 14.5562 3.92502 14.1187 3.95002C13.6812 3.97502 12.8844 4.20315 12.8406 6.26565C12.8344 6.6469 12.7812 6.83127 12.7969 7.14377L7.80624 2.15315C7.48124 1.82815 6.96562 1.8219 6.64062 2.1469C6.31562 2.4719 6.31562 3.00002 6.63749 3.3219L9.59062 6.27502C9.59374 6.27815 9.59374 6.28127 9.59687 6.28127C9.87187 6.55627 9.54062 6.93752 9.24999 6.7719L5.71562 3.24065C5.39062 2.91565 4.87499 2.9094 4.54999 3.2344C4.22499 3.5594 4.22187 4.0844 4.54687 4.4094L8.09062 7.95315C8.26249 8.21252 7.93437 8.52502 7.67812 8.31565L4.58437 5.2219C4.25937 4.8969 3.74374 4.89065 3.41874 5.21565C3.09374 5.54065 3.09062 6.06565 3.41562 6.39065L6.46249 9.43752C6.46562 9.44377 6.47187 9.45315 6.48124 9.46252C6.74687 9.72815 6.43124 10.0938 6.14999 9.94065L3.96874 7.7594C3.64374 7.4344 3.12812 7.42815 2.80312 7.75315C2.47812 8.07815 2.47499 8.60315 2.79999 8.92815L7.92812 14.0625C8.97187 15.1063 10.4812 15.3906 11.7812 14.9219L12.6156 15.7563C12.9406 16.0813 13.4656 16.0813 13.7906 15.7563L16.1375 13.4094C16.4625 13.0875 16.4625 12.5594 16.1375 12.2375Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M15.5406 11.6367C15.4937 11.7023 15.4469 11.7617 15.4 11.8086L13.6125 13.593V13.5836L13.1375 14.0617C12.7406 14.4586 12.2781 14.743 11.7844 14.9211L12.5281 15.6648C12.6906 15.6148 12.8281 15.5461 12.9156 15.4586L15.85 12.5242C15.9344 12.4398 16.0062 12.3117 16.0656 12.1617L15.5406 11.6367Z"
+                                                fill="#B46D39" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_160_109672">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    123
+                                </div>
+                                <div class="reaction1">
+                                    <!-- Replace with your refresh SVG -->
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.52042 1.21548C7.49193 1.1509 8.50739 1.15076 9.48088 1.21548C12.5253 1.41785 14.9408 3.87538 15.1394 6.94856C15.1766 7.5235 15.1766 8.11821 15.1394 8.69316C14.9408 11.7663 12.5253 14.2239 9.48088 14.4262C8.50739 14.491 7.49193 14.4908 6.52042 14.4262C6.1438 14.4012 5.73383 14.3122 5.37291 14.1635C5.21419 14.0981 5.10643 14.0539 5.02759 14.025C4.97338 14.0623 4.90137 14.1152 4.79652 14.1925C4.26823 14.5821 3.60126 14.8553 2.65477 14.8323L2.62428 14.8316C2.44168 14.8272 2.24706 14.8226 2.08833 14.7918C1.89715 14.7549 1.66063 14.6624 1.51259 14.41C1.35147 14.1353 1.41607 13.8575 1.47857 13.6826C1.53756 13.5175 1.63981 13.3238 1.74427 13.126L1.75859 13.0989C2.06947 12.5097 2.15608 12.0283 1.98985 11.7073C1.43497 10.8697 0.935801 9.8374 0.861852 8.69316C0.824695 8.11821 0.824695 7.5235 0.861852 6.94856C1.06046 3.87538 3.47599 1.41785 6.52042 1.21548ZM5.16732 6.33366C5.16732 6.6098 5.39117 6.83366 5.66732 6.83366H8.00065C8.27679 6.83366 8.50065 6.6098 8.50065 6.33366C8.50065 6.05752 8.27679 5.83366 8.00065 5.83366H5.66732C5.39117 5.83366 5.16732 6.05752 5.16732 6.33366ZM5.16732 9.66699C5.16732 9.94313 5.39117 10.167 5.66732 10.167H10.334C10.6101 10.167 10.834 9.94313 10.834 9.66699C10.834 9.39085 10.6101 9.16699 10.334 9.16699H5.66732C5.39117 9.16699 5.16732 9.39085 5.16732 9.66699Z"
+                                            fill="#71747F" />
+                                    </svg>
+                                    123
+                                </div>
+                                <div class="repost-container">
+                                    <div class="reaction1 repost-icon" onclick="toggleRepostMenu(event)">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.60535 4.20312C1.30889 3.98478 1.24556 3.56744 1.4639 3.27098L1.46579 3.26848C1.50382 3.21813 1.61143 3.07566 1.67379 2.99576C1.80009 2.83392 1.97494 2.6159 2.16594 2.39593C2.35406 2.17926 2.57096 1.94542 2.78025 1.7605C2.88413 1.66871 3.00186 1.57486 3.12547 1.50034C3.23078 1.43686 3.42681 1.33301 3.66737 1.33301C3.90793 1.33301 4.10396 1.43686 4.20928 1.50034C4.33289 1.57486 4.45062 1.66872 4.5545 1.7605C4.76379 1.94542 4.98069 2.17927 5.1688 2.39594C5.3598 2.61591 5.53465 2.83394 5.66094 2.99577C5.7234 3.07581 5.83119 3.21852 5.86905 3.26864L5.87075 3.27089C6.08909 3.56736 6.02583 3.9848 5.72936 4.20314C5.61177 4.28974 5.47516 4.33203 5.3395 4.33303H4.33407L4.33407 9.66638C4.33407 11.7807 5.83251 13.3331 8.00073 13.3331C8.36892 13.3331 8.6674 13.6315 8.6674 13.9997C8.6674 14.3679 8.36892 14.6664 8.00073 14.6664C5.08233 14.6664 3.00073 12.5032 3.00073 9.66639L3.00073 4.33303H2.00069C1.86323 4.33314 1.72452 4.29089 1.60535 4.20312Z" fill="#71747F"/>
+                                            <path d="M8.00065 1.33309C10.9191 1.33309 13.0007 3.49632 13.0007 6.33309V11.6664H13.9978C14.1362 11.6657 14.276 11.7079 14.396 11.7963C14.6924 12.0146 14.7558 12.432 14.5374 12.7284L14.5356 12.7308C14.4977 12.781 14.39 12.9237 14.3276 13.0037C14.2013 13.1655 14.0264 13.3835 13.8354 13.6035C13.6473 13.8202 13.4304 14.054 13.2211 14.2389C13.1172 14.3307 12.9995 14.4246 12.8759 14.4991C12.7706 14.5626 12.5745 14.6664 12.334 14.6664C12.0934 14.6664 11.8974 14.5626 11.7921 14.4991C11.6685 14.4246 11.5507 14.3307 11.4469 14.2389C11.2376 14.054 11.0207 13.8202 10.8326 13.6035C10.6416 13.3835 10.4667 13.1655 10.3404 13.0037C10.278 12.9237 10.1703 12.7811 10.1323 12.7309L10.1306 12.7286C9.91225 12.4321 9.9755 12.0147 10.272 11.7963C10.3911 11.7085 10.5298 11.6663 10.6673 11.6664H11.6673V6.33309C11.6673 4.21882 10.1689 2.66642 8.00065 2.66642C7.63246 2.66642 7.33398 2.36795 7.33398 1.99976C7.33398 1.63157 7.63246 1.33309 8.00065 1.33309Z" fill="#71747F"/>
+                                        </svg>
+                                        123
+                                    </div>
+                                
+                                    <!-- Repost Dropdown Menu -->
+                                    <div class="repost-dropdown">
+                                        <a href="#" class="repost-option">Repost</a>
+                                        <a href="#" class="repost-option">Quote Repost</a>
+                                    </div>
+                                </div>
+                                <script>
+                                    function toggleRepostMenu(event) {
+                                        event.stopPropagation();
+                                        const menu = event.currentTarget.nextElementSibling;
+                                
+                                        // Close all other dropdowns before opening a new one
+                                        document.querySelectorAll(".repost-dropdown").forEach(m => {
+                                            if (m !== menu) {
+                                                m.style.display = "none";
+                                            }
+                                        });
+                                
+                                        // Toggle current menu visibility
+                                        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+                                    }
+                                
+                                    // Close dropdown when clicking outside
+                                    window.addEventListener("click", () => {
+                                        document.querySelectorAll(".repost-dropdown").forEach(menu => {
+                                            menu.style.display = "none";
+                                        });
+                                    });
+                                </script>
+                                <div class="reaction1">
+                                    <!-- Replace with your heart SVG -->
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3976 1.69537C14.0859 1.35978 13.5973 1.23408 13.1306 1.18909C12.6401 1.14181 12.0527 1.17325 11.4202 1.2562C10.1518 1.42257 8.61951 1.80767 7.14749 2.2815C5.67455 2.75562 4.23878 3.32609 3.16352 3.87264C2.62838 4.14464 2.16424 4.41987 1.82683 4.68423C1.65881 4.81587 1.5055 4.95766 1.39017 5.10857C1.28017 5.25252 1.16444 5.45732 1.16603 5.70421C1.17021 6.35226 1.61154 6.81026 2.08153 7.11768C2.56124 7.43146 3.18601 7.6679 3.80709 7.85311C4.43484 8.04031 5.09499 8.18539 5.66251 8.30297C5.69969 8.31068 5.77403 8.32605 5.86513 8.34487C6.20817 8.41576 6.37969 8.4512 6.54093 8.40294C6.70216 8.35468 6.82612 8.23072 7.07403 7.98281L9.52794 5.52892C9.78829 5.26857 10.2104 5.26857 10.4707 5.52892C10.7311 5.78927 10.7311 6.21138 10.4707 6.47173L8.18232 8.76015C7.92962 9.01284 7.80327 9.13919 7.75546 9.30319C7.70764 9.46719 7.7462 9.64127 7.82332 9.98943C8.12231 11.3393 8.38188 12.4546 8.64088 13.2051C8.79215 13.6434 8.96234 14.0228 9.17789 14.3025C9.40284 14.5945 9.7088 14.8151 10.1115 14.8329C10.3623 14.844 10.5707 14.7295 10.7137 14.6233C10.8644 14.5114 11.006 14.3613 11.1374 14.1972C11.4014 13.8673 11.6788 13.4109 11.9548 12.8835C12.5095 11.8234 13.0968 10.4022 13.5938 8.94006C14.0905 7.47852 14.5045 5.95406 14.7039 4.68706C14.8033 4.05519 14.8525 3.46837 14.8252 2.97684C14.7993 2.5107 14.7 2.02103 14.3976 1.69537Z"
+                                            fill="#71747F" />
+                                    </svg>
+                                    123
+                                </div>
+                            </div>
+                            <div class="bookmark1">
+                                <!-- Replace with your bookmark SVG -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03575 0.833008C9.26196 0.832999 10.2314 0.832991 10.9896 0.931213C11.7679 1.03203 12.399 1.24416 12.8985 1.72543C13.4007 2.20921 13.6244 2.82463 13.7303 3.58317C13.8327 4.31734 13.8327 5.25439 13.8327 6.43264V12.0302C13.8327 12.7619 13.8327 13.3699 13.7625 13.8267C13.6898 14.2993 13.5203 14.7594 13.053 15.0089C12.6362 15.2315 12.1778 15.1862 11.7891 15.0682C11.3959 14.9489 10.9963 14.7323 10.6305 14.5011C10.2611 14.2677 9.86189 13.9742 9.547 13.7415C9.23845 13.5134 8.99064 13.3302 8.80142 13.2163C8.53505 13.0559 8.36685 12.9553 8.23051 12.8911C8.10468 12.8318 8.04355 12.8224 7.99935 12.8224C7.95515 12.8224 7.89403 12.8318 7.76819 12.8911C7.63185 12.9553 7.46366 13.0559 7.19728 13.2163C7.00807 13.3302 6.76025 13.5134 6.45171 13.7415C6.13681 13.9742 5.73761 14.2677 5.36825 14.5011C5.00237 14.7323 4.60277 14.9489 4.20964 15.0682C3.82095 15.1862 3.36252 15.2315 2.94573 15.0089C2.47839 14.7594 2.30894 14.2993 2.23623 13.8267C2.16597 13.3699 2.16599 12.7619 2.16602 12.0303L2.16602 6.43263C2.16601 5.25438 2.166 4.31734 2.26845 3.58317C2.3743 2.82463 2.59801 2.20921 3.10016 1.72543C3.59969 1.24416 4.23076 1.03203 5.00907 0.931213C5.76735 0.832991 6.73674 0.832999 7.96296 0.833008H8.03575Z"
+                                        fill="#71747F" />
+                                </svg>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <!-- cmnts -->
+
+
+                 </div>
+                <!--####### video post ended here ########-->
+
+
+
+                <!--  Donation Posts Section started from here-->
+                <div class="images-post px-sm-3 px-1 mt-4">
+                    <section>
+                        
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div>
+                                    <a href="./profile.html">
+                                        <img src="./img/avatars/avatar-2.jpg"
+                                            style="width: 28px; height: 28px; border-radius: 50%;">
+                                    </a>
+                                </div>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <a href="./profile.html" style="text-decoration: none !important;">
+                                        <p class="mb-0 timeline-profile-name">fakhrinaufal</p>
+                                    </a>
+                                    <div>
+                                        <img src="./img/Home/leafe.svg">
+                                    </div>
+                                    <div>
+                                        <p class="m-ago mb-0">6m ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 1 -->
+                            <div class="menu-container position-relative">
+                                <div class="dots-icon">⋯</div>
+                                <div class="options-menu">
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/rprt.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Post Detail
+                                    </a>
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/rprt.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Report
+                                    </a>
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/copiii.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Copy Link
+                                    </a>
+                                    <a href="./postdetail-photo.html" class="option d-flex align-items-center px-1">
+                                        <img src="./img/Home/embed-icon.svg" class="me-2" style="width: 13px; height: 13px;" alt=""> Embed
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="container mt-3">
+   
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="card position-relative mb-0">
+                                    <img src="./img/Home/background-imagefruits.avif" class="card-img-top" alt="Donation Image">
+                                    <div class="card-body text-white position-absolute bottom-0 start-0 w-100 p-3 d-flex flex-sm-row flex-column justify-content-between align-items-end" 
+                     style="background-color: rgba(12, 140, 133, 0.7);">
+                     <div class="d-flex flex-column align-items-start donation-post-detail">
+                    <h5 class="card-title text-white">Winter Jacket</h5>
+                    <p class="card-text text-white mb-0">A warm winter jacket available for donation.</p>
+                    <p class="card-text text-white mb-0"><small>Quantity: 2</small></p>
+                    <p class="card-text text-white mb-0"><small>Category: Clothing</small></p>
+                    <p class="card-text text-white mb-0"><small>Expiry Date: N/A</small></p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".donation-modal">Request Donation</button>
+                </div>
+                </div>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                    
+                   
+                       <!-- liked by -->
+                       <div class="post-footer d-flex justify-content-between align-items-center mt-2">
+                        <div class="liked-by">
+                            <div class="profile-images-ok">
+                                <img src="./img/avatars/avatar-3.jpg" alt="Profile 1" />
+                                <img src="./img/avatars/avatar-4.jpg" alt="Profile 2" />
+                                <img src="./img/avatars/avatar-5.jpg" alt="Profile 3" />
+                            </div>
+                            <div class="text-liked-by">
+                                Liked by <span class="px-1 text-liked-by1"> kriibooo </span> and
+                                <span class="ps-1 text-liked-by1"> 10 others</span>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Reactions Section -->
+                     <div class="position-relative">
+                        <div class="reactions">
+                            <div class="d-flex gap-2">
+                                <div class="reaction1">
+                                    <!-- Replace with your comment SVG -->
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_160_109672)">
+                                            <path
+                                                d="M14.3219 12.2375L14.25 12.1656L13.7313 11.6469C14.0781 11.2125 14.2094 10.6656 14.1313 10.1438C14.1313 10.1344 14.1281 10.125 14.125 10.1156C14.1219 10.1031 14.1219 10.0938 14.1188 10.0813C14.1156 10.0406 14.1 9.97815 14.075 9.8969C14.0625 9.85627 14.05 9.81877 14.0375 9.77815C13.7594 8.96252 12.8969 6.86877 13.0469 4.80627C13.05 4.34377 12.7406 3.92502 12.3031 3.95002C11.8656 3.97502 11.0688 4.20315 11.025 6.26565C11.0188 6.6469 10.9656 6.83127 10.9813 7.14377L5.99063 2.15315C5.66563 1.82815 5.15001 1.8219 4.82501 2.1469C4.50001 2.4719 4.50001 3.00002 4.82188 3.3219L7.77501 6.27502C7.77813 6.27815 7.77813 6.28127 7.78126 6.28127C8.05626 6.55627 7.72501 6.93752 7.43438 6.7719L3.90001 3.24065C3.57501 2.91565 3.05938 2.9094 2.73438 3.2344C2.40938 3.56252 2.40626 4.08752 2.73126 4.41252L6.27501 7.95627C6.44688 8.21565 6.11876 8.52815 5.86251 8.31877L2.76876 5.22502C2.44376 4.90002 1.92813 4.89377 1.60313 5.21877C1.27813 5.54377 1.27501 6.06877 1.60001 6.39377L4.64688 9.44065C4.65001 9.4469 4.65626 9.45627 4.66563 9.46565C4.93126 9.73127 4.61563 10.0969 4.33438 9.94377L2.15313 7.76252C1.82813 7.43752 1.31251 7.43127 0.987506 7.75627C0.662506 8.08127 0.659381 8.60627 0.984381 8.93127L6.11251 14.0625C7.15626 15.1063 8.66563 15.3906 9.96563 14.9219L10.125 15.0813L10.8 15.7563C11.125 16.0813 11.65 16.0813 11.975 15.7563L14.3219 13.4094C14.6469 13.0875 14.6469 12.5594 14.3219 12.2375Z"
+                                                fill="#CC824C" />
+                                            <path
+                                                d="M12.3094 1.03027C12.3 1.00215 12.2812 0.980273 12.2531 0.970898L11.3187 0.630273C11.2906 0.620898 11.2625 0.624023 11.2375 0.639648C11.2125 0.655273 11.2 0.680273 11.1969 0.708398L11.0531 2.5584C11.05 2.59902 11.075 2.63652 11.1125 2.64902C11.1219 2.65215 11.1344 2.65527 11.1437 2.65527C11.1719 2.65527 11.2 2.64277 11.2187 2.61777L12.2969 1.1084C12.3156 1.08652 12.3187 1.0584 12.3094 1.03027Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M14.2188 2.83125L13.8 1.93125C13.7875 1.90625 13.7656 1.8875 13.7375 1.88125C13.7094 1.875 13.6813 1.88125 13.6594 1.9L12.25 3.10625C12.2188 3.13125 12.2094 3.175 12.2281 3.2125C12.2438 3.24375 12.275 3.26562 12.3094 3.26562H12.325L14.1531 2.9625C14.1813 2.95938 14.2063 2.94063 14.2188 2.91563C14.2313 2.8875 14.2313 2.85625 14.2188 2.83125Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M9.81249 2.35864L9.50936 0.530511C9.50624 0.502386 9.48749 0.477386 9.46249 0.464886C9.43749 0.452386 9.40936 0.452386 9.38124 0.461761L8.48124 0.880511C8.45624 0.893011 8.43749 0.914886 8.43124 0.943011C8.42499 0.971136 8.43124 0.999261 8.44999 1.02114L9.65624 2.43364C9.67499 2.45551 9.69999 2.46489 9.72499 2.46489C9.73749 2.46489 9.74999 2.46176 9.76249 2.45551C9.79999 2.43989 9.81874 2.39926 9.81249 2.35864Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M16.1375 12.2375L15.5469 11.6469C15.8937 11.2125 16.025 10.6656 15.9469 10.1438C15.9469 10.1344 15.9437 10.125 15.9406 10.1156C15.9375 10.1031 15.9375 10.0938 15.9344 10.0813C15.9312 10.0406 15.9156 9.97815 15.8906 9.8969C15.8781 9.85627 15.8656 9.81877 15.8531 9.77815C15.575 8.96252 14.7125 6.86877 14.8625 4.80627C14.8656 4.34377 14.5562 3.92502 14.1187 3.95002C13.6812 3.97502 12.8844 4.20315 12.8406 6.26565C12.8344 6.6469 12.7812 6.83127 12.7969 7.14377L7.80624 2.15315C7.48124 1.82815 6.96562 1.8219 6.64062 2.1469C6.31562 2.4719 6.31562 3.00002 6.63749 3.3219L9.59062 6.27502C9.59374 6.27815 9.59374 6.28127 9.59687 6.28127C9.87187 6.55627 9.54062 6.93752 9.24999 6.7719L5.71562 3.24065C5.39062 2.91565 4.87499 2.9094 4.54999 3.2344C4.22499 3.5594 4.22187 4.0844 4.54687 4.4094L8.09062 7.95315C8.26249 8.21252 7.93437 8.52502 7.67812 8.31565L4.58437 5.2219C4.25937 4.8969 3.74374 4.89065 3.41874 5.21565C3.09374 5.54065 3.09062 6.06565 3.41562 6.39065L6.46249 9.43752C6.46562 9.44377 6.47187 9.45315 6.48124 9.46252C6.74687 9.72815 6.43124 10.0938 6.14999 9.94065L3.96874 7.7594C3.64374 7.4344 3.12812 7.42815 2.80312 7.75315C2.47812 8.07815 2.47499 8.60315 2.79999 8.92815L7.92812 14.0625C8.97187 15.1063 10.4812 15.3906 11.7812 14.9219L12.6156 15.7563C12.9406 16.0813 13.4656 16.0813 13.7906 15.7563L16.1375 13.4094C16.4625 13.0875 16.4625 12.5594 16.1375 12.2375Z"
+                                                fill="#B46D39" />
+                                            <path
+                                                d="M15.5406 11.6367C15.4937 11.7023 15.4469 11.7617 15.4 11.8086L13.6125 13.593V13.5836L13.1375 14.0617C12.7406 14.4586 12.2781 14.743 11.7844 14.9211L12.5281 15.6648C12.6906 15.6148 12.8281 15.5461 12.9156 15.4586L15.85 12.5242C15.9344 12.4398 16.0062 12.3117 16.0656 12.1617L15.5406 11.6367Z"
+                                                fill="#B46D39" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_160_109672">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    123
+                                </div>
+                                <div class="reaction1">
+                                    <!-- Replace with your refresh SVG -->
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.52042 1.21548C7.49193 1.1509 8.50739 1.15076 9.48088 1.21548C12.5253 1.41785 14.9408 3.87538 15.1394 6.94856C15.1766 7.5235 15.1766 8.11821 15.1394 8.69316C14.9408 11.7663 12.5253 14.2239 9.48088 14.4262C8.50739 14.491 7.49193 14.4908 6.52042 14.4262C6.1438 14.4012 5.73383 14.3122 5.37291 14.1635C5.21419 14.0981 5.10643 14.0539 5.02759 14.025C4.97338 14.0623 4.90137 14.1152 4.79652 14.1925C4.26823 14.5821 3.60126 14.8553 2.65477 14.8323L2.62428 14.8316C2.44168 14.8272 2.24706 14.8226 2.08833 14.7918C1.89715 14.7549 1.66063 14.6624 1.51259 14.41C1.35147 14.1353 1.41607 13.8575 1.47857 13.6826C1.53756 13.5175 1.63981 13.3238 1.74427 13.126L1.75859 13.0989C2.06947 12.5097 2.15608 12.0283 1.98985 11.7073C1.43497 10.8697 0.935801 9.8374 0.861852 8.69316C0.824695 8.11821 0.824695 7.5235 0.861852 6.94856C1.06046 3.87538 3.47599 1.41785 6.52042 1.21548ZM5.16732 6.33366C5.16732 6.6098 5.39117 6.83366 5.66732 6.83366H8.00065C8.27679 6.83366 8.50065 6.6098 8.50065 6.33366C8.50065 6.05752 8.27679 5.83366 8.00065 5.83366H5.66732C5.39117 5.83366 5.16732 6.05752 5.16732 6.33366ZM5.16732 9.66699C5.16732 9.94313 5.39117 10.167 5.66732 10.167H10.334C10.6101 10.167 10.834 9.94313 10.834 9.66699C10.834 9.39085 10.6101 9.16699 10.334 9.16699H5.66732C5.39117 9.16699 5.16732 9.39085 5.16732 9.66699Z"
+                                            fill="#71747F" />
+                                    </svg>
+                                    123
+                                </div>
+                                <div class="repost-container">
+                                    <div class="reaction1 repost-icon" onclick="toggleRepostMenu(event)">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.60535 4.20312C1.30889 3.98478 1.24556 3.56744 1.4639 3.27098L1.46579 3.26848C1.50382 3.21813 1.61143 3.07566 1.67379 2.99576C1.80009 2.83392 1.97494 2.6159 2.16594 2.39593C2.35406 2.17926 2.57096 1.94542 2.78025 1.7605C2.88413 1.66871 3.00186 1.57486 3.12547 1.50034C3.23078 1.43686 3.42681 1.33301 3.66737 1.33301C3.90793 1.33301 4.10396 1.43686 4.20928 1.50034C4.33289 1.57486 4.45062 1.66872 4.5545 1.7605C4.76379 1.94542 4.98069 2.17927 5.1688 2.39594C5.3598 2.61591 5.53465 2.83394 5.66094 2.99577C5.7234 3.07581 5.83119 3.21852 5.86905 3.26864L5.87075 3.27089C6.08909 3.56736 6.02583 3.9848 5.72936 4.20314C5.61177 4.28974 5.47516 4.33203 5.3395 4.33303H4.33407L4.33407 9.66638C4.33407 11.7807 5.83251 13.3331 8.00073 13.3331C8.36892 13.3331 8.6674 13.6315 8.6674 13.9997C8.6674 14.3679 8.36892 14.6664 8.00073 14.6664C5.08233 14.6664 3.00073 12.5032 3.00073 9.66639L3.00073 4.33303H2.00069C1.86323 4.33314 1.72452 4.29089 1.60535 4.20312Z" fill="#71747F"/>
+                                            <path d="M8.00065 1.33309C10.9191 1.33309 13.0007 3.49632 13.0007 6.33309V11.6664H13.9978C14.1362 11.6657 14.276 11.7079 14.396 11.7963C14.6924 12.0146 14.7558 12.432 14.5374 12.7284L14.5356 12.7308C14.4977 12.781 14.39 12.9237 14.3276 13.0037C14.2013 13.1655 14.0264 13.3835 13.8354 13.6035C13.6473 13.8202 13.4304 14.054 13.2211 14.2389C13.1172 14.3307 12.9995 14.4246 12.8759 14.4991C12.7706 14.5626 12.5745 14.6664 12.334 14.6664C12.0934 14.6664 11.8974 14.5626 11.7921 14.4991C11.6685 14.4246 11.5507 14.3307 11.4469 14.2389C11.2376 14.054 11.0207 13.8202 10.8326 13.6035C10.6416 13.3835 10.4667 13.1655 10.3404 13.0037C10.278 12.9237 10.1703 12.7811 10.1323 12.7309L10.1306 12.7286C9.91225 12.4321 9.9755 12.0147 10.272 11.7963C10.3911 11.7085 10.5298 11.6663 10.6673 11.6664H11.6673V6.33309C11.6673 4.21882 10.1689 2.66642 8.00065 2.66642C7.63246 2.66642 7.33398 2.36795 7.33398 1.99976C7.33398 1.63157 7.63246 1.33309 8.00065 1.33309Z" fill="#71747F"/>
+                                        </svg>
+                                        123
+                                    </div>
+                                
+                                    <!-- Repost Dropdown Menu -->
+                                    <div class="repost-dropdown">
+                                        <a href="#" class="repost-option">Repost</a>
+                                        <a href="#" class="repost-option">Quote Repost</a>
+                                    </div>
+                                </div>
+                                <script>
+                                    function toggleRepostMenu(event) {
+                                        event.stopPropagation();
+                                        const menu = event.currentTarget.nextElementSibling;
+                                
+                                        // Close all other dropdowns before opening a new one
+                                        document.querySelectorAll(".repost-dropdown").forEach(m => {
+                                            if (m !== menu) {
+                                                m.style.display = "none";
+                                            }
+                                        });
+                                
+                                        // Toggle current menu visibility
+                                        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+                                    }
+                                
+                                    // Close dropdown when clicking outside
+                                    window.addEventListener("click", () => {
+                                        document.querySelectorAll(".repost-dropdown").forEach(menu => {
+                                            menu.style.display = "none";
+                                        });
+                                    });
+                                </script>
+                                <div class="reaction1">
+                                    <!-- Replace with your heart SVG -->
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3976 1.69537C14.0859 1.35978 13.5973 1.23408 13.1306 1.18909C12.6401 1.14181 12.0527 1.17325 11.4202 1.2562C10.1518 1.42257 8.61951 1.80767 7.14749 2.2815C5.67455 2.75562 4.23878 3.32609 3.16352 3.87264C2.62838 4.14464 2.16424 4.41987 1.82683 4.68423C1.65881 4.81587 1.5055 4.95766 1.39017 5.10857C1.28017 5.25252 1.16444 5.45732 1.16603 5.70421C1.17021 6.35226 1.61154 6.81026 2.08153 7.11768C2.56124 7.43146 3.18601 7.6679 3.80709 7.85311C4.43484 8.04031 5.09499 8.18539 5.66251 8.30297C5.69969 8.31068 5.77403 8.32605 5.86513 8.34487C6.20817 8.41576 6.37969 8.4512 6.54093 8.40294C6.70216 8.35468 6.82612 8.23072 7.07403 7.98281L9.52794 5.52892C9.78829 5.26857 10.2104 5.26857 10.4707 5.52892C10.7311 5.78927 10.7311 6.21138 10.4707 6.47173L8.18232 8.76015C7.92962 9.01284 7.80327 9.13919 7.75546 9.30319C7.70764 9.46719 7.7462 9.64127 7.82332 9.98943C8.12231 11.3393 8.38188 12.4546 8.64088 13.2051C8.79215 13.6434 8.96234 14.0228 9.17789 14.3025C9.40284 14.5945 9.7088 14.8151 10.1115 14.8329C10.3623 14.844 10.5707 14.7295 10.7137 14.6233C10.8644 14.5114 11.006 14.3613 11.1374 14.1972C11.4014 13.8673 11.6788 13.4109 11.9548 12.8835C12.5095 11.8234 13.0968 10.4022 13.5938 8.94006C14.0905 7.47852 14.5045 5.95406 14.7039 4.68706C14.8033 4.05519 14.8525 3.46837 14.8252 2.97684C14.7993 2.5107 14.7 2.02103 14.3976 1.69537Z"
+                                            fill="#71747F" />
+                                    </svg>
+                                    123
+                                </div>
+                            </div>
+                            <div class="bookmark1">
+                                <!-- Replace with your bookmark SVG -->
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.03575 0.833008C9.26196 0.832999 10.2314 0.832991 10.9896 0.931213C11.7679 1.03203 12.399 1.24416 12.8985 1.72543C13.4007 2.20921 13.6244 2.82463 13.7303 3.58317C13.8327 4.31734 13.8327 5.25439 13.8327 6.43264V12.0302C13.8327 12.7619 13.8327 13.3699 13.7625 13.8267C13.6898 14.2993 13.5203 14.7594 13.053 15.0089C12.6362 15.2315 12.1778 15.1862 11.7891 15.0682C11.3959 14.9489 10.9963 14.7323 10.6305 14.5011C10.2611 14.2677 9.86189 13.9742 9.547 13.7415C9.23845 13.5134 8.99064 13.3302 8.80142 13.2163C8.53505 13.0559 8.36685 12.9553 8.23051 12.8911C8.10468 12.8318 8.04355 12.8224 7.99935 12.8224C7.95515 12.8224 7.89403 12.8318 7.76819 12.8911C7.63185 12.9553 7.46366 13.0559 7.19728 13.2163C7.00807 13.3302 6.76025 13.5134 6.45171 13.7415C6.13681 13.9742 5.73761 14.2677 5.36825 14.5011C5.00237 14.7323 4.60277 14.9489 4.20964 15.0682C3.82095 15.1862 3.36252 15.2315 2.94573 15.0089C2.47839 14.7594 2.30894 14.2993 2.23623 13.8267C2.16597 13.3699 2.16599 12.7619 2.16602 12.0303L2.16602 6.43263C2.16601 5.25438 2.166 4.31734 2.26845 3.58317C2.3743 2.82463 2.59801 2.20921 3.10016 1.72543C3.59969 1.24416 4.23076 1.03203 5.00907 0.931213C5.76735 0.832991 6.73674 0.832999 7.96296 0.833008H8.03575Z"
+                                        fill="#71747F" />
+                                </svg>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <!-- cmnts -->
+                    <div>
+                        <p class="mb-0 see-all-txt mt-2">See all 7 comments</p>
+                        <p class="cmnt-person-name  mb-0">alenamakarov <span class="cmnt-person-name1">Lets
+                                goo!</span>
+                        </p>
+                        <!-- <div class="d-flex align-items-center gap-1">
+                            <img src="../asset/images/Avatar.png" style="width: 18px; height: 18px;">
+                            <input type="text" class="form-control add-input" placeholder="Add a comment..."
+                                style="border: none; box-shadow: none; outline: none;">
+                        </div> -->
+                        <!-- cmnt sec -->
+                        <section>
+
+
+                            <div
+                                class="d-flex justify-content-center align-items-center gap-1 gap-sm-2 my-4">
+                                <div class="pf_cont">
+                                    <img src="./img/avatars/avatar-2.jpg" alt="Profile" class="profile-img">
+                                </div>
+
+                                <div class="comment-container flex-shrink-1" id="commentContainer">
+                                    <textarea class="comment-input" placeholder="Comment" id="commentInput"
+                                        style="font-size: 12.5px;"></textarea>
+
+                                    <!-- Send button with icon, positioned fixed within the container -->
+                                    <a href="./cmnt-images.html">
+                                        <div class="green-subscribed-bg" id="sendButton">
+                                            <img src="./img/Home/white-send.svg" alt="Send">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="send-icon d-flex align-items-center me-2">
+                                    <label for="img_inp">
+                                        <img src="./img/Home/icon_file.png" alt="Upload Icon">
+                                    </label>
+                                    <input type="file" class="img_input_field" hidden accept="image/*"
+                                        id="img_inp">
+                                </div>
+                            </div>
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    const commentInput = document.getElementById("commentInput");
+                                    const sendButton = document.getElementById("sendButton");
+                                    const commentContainer = document.getElementById("commentContainer");
+
+                                    // Add focus event to show green border and send icon
+                                    commentInput.addEventListener("focus", () => {
+                                        commentContainer.classList.add("active");
+                                        sendButton.classList.add("active");
+                                    });
+
+                                    // Add blur event to revert changes when not typing
+                                    commentInput.addEventListener("blur", () => {
+                                        if (commentInput.value.trim() === "") {
+                                            commentContainer.classList.remove("active");
+                                            sendButton.classList.remove("active");
+                                        }
+                                    });
+
+                                    // Adjust container height dynamically based on input content
+                                    commentInput.addEventListener("input", () => {
+                                        commentInput.style.height = "30px"; // Reset height
+                                        commentInput.style.height = commentInput.scrollHeight + "px"; // Grow as per content
+
+                                        // Check if content exceeds max-height and activate scrollbar
+                                        if (commentInput.scrollHeight > 100) {
+                                            commentContainer.style.overflowY = "scroll";
+                                            commentInput.style.height = "100px"; // Set to max-height
+                                        } else {
+                                            commentContainer.style.overflowY = "hidden";
+                                        }
+                                    });
+                                });
+                            </script>
+
+                        </section>
+
+                        <!-- cmnt sec -->
+                    </div>
+                </div>
+                <!--  Donation Posts Section ended from here-->
+
+
+            </div>
+            <div class="col-lg-3 col-md-4 mt-3 pe-lg-0  " style="border-left: 1px solid  #F2F2F3;">ALi</div>
+        </div>
+    </div>
+
+            <!-- simple post modal started from here -->
+            <div class="modal fade simplepost_modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="postModalLabel">Create Simple Post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <textarea class="form-control postDescription" placeholder="Write your post..."></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary postButton" disabled>Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- simple post modal ended from here -->
+
+    
+    <!-- photo post modal started from here -->
+    <div class="modal fade photopost_modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Create Photo Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control postDescription" placeholder="Write your post..."></textarea>
+                    <input type="file" class="form-control mt-2 postImage" accept="image/*">
+                    
+                    <div class="image-preview-container mt-2" style="position: relative; display: none;">
+                        <img class="imagePreview w-100" style="height: 500px; object-fit: cover;" alt="Image Preview">
+                        <button type="button" class="btn btn-danger btn-sm removeImage" style="position: absolute; top: 10px; right: 10px;">&times;</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary postButton" disabled>Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- photo post modal ended from here -->
+        
+        <!-- video post modal started from here -->
+        <div class="modal fade videopost_modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="postModalLabel">Create Video Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control postDescription" placeholder="Write your post..." oninput="validatePost()"></textarea>
+                        <input type="file" class="form-control mt-2 postVideo" accept="video/*" onchange="previewVideo(event)">
+                        
+                        <div class="video-preview-container mt-2" style="position: relative; display: none;">
+                            <video id="videoPreview" class="w-100" style="height: 500px; object-fit: cover;" controls></video>
+                            <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px;" onclick="removeVideo()">&times;</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="submitPost()" disabled>Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <!-- video post modal ended from here -->
+
+        <!-- Donation post modal started from here -->
+        <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="donationModalLabel">Upload Donation Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="donationForm">
+                            <div class="mb-3">
+                                <label for="itemName" class="form-label">Item Name</label>
+                                <input type="text" class="form-control" id="itemName" name="itemName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" name="quantity" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expiryDate" class="form-label">Expiry Date</label>
+                                <input type="date" class="form-control" id="expiryDate" name="expiryDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Category</label>
+                                <select class="form-select" id="category" name="category" required>
+                                    <option value="">Select category</option>
+                                    <option value="food">Food</option>
+                                    <option value="clothing">Clothing</option>
+                                    <option value="medicine">Medicine</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imageUpload" class="form-label">Upload Image</label>
+                                <input type="file" class="form-control" id="imageUpload" name="imageUpload" accept="image/*" required>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Donation post modal ended from here -->
+
+         <!-- Donation request modal started from here -->
+         <div class="modal fade donation-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <div class="modal-header">
+                  <h5 class="modal-title">Donation Request Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <div class="modal-body">
+                  <form id="donation-form">
+                    <div class="mb-3">
+                      <label class="form-label">First Name</label>
+                      <input type="text" class="form-control required-field" placeholder="Enter first name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Last Name</label>
+                      <input type="text" class="form-control required-field" placeholder="Enter last name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control required-field" placeholder="Enter email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Complete Address</label>
+                      <textarea class="form-control required-field" rows="3" placeholder="Enter your complete address" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Contact Number</label>
+                      <input type="tel" class="form-control required-field" placeholder="Enter contact number" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Requested Quantity</label>
+                      <input type="number" class="form-control required-field" placeholder="Enter quantity to request" min="1" required>
+                    </div>
+                  </form>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Submit Request</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+           
+        <!-- Donation request modal ended from here -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        class DropdownMenu {
+            constructor() {
+                this.init();
+            }
+    
+            init() {
+                // Get all menu containers
+                const menuContainers = document.querySelectorAll(".menu-container");
+    
+                menuContainers.forEach(container => {
+                    const dotsIcon = container.querySelector(".dots-icon");
+                    const menu = container.querySelector(".options-menu");
+    
+                    // Toggle menu when clicking the dots icon
+                    dotsIcon.addEventListener("click", (event) => {
+                        event.stopPropagation();
+                        this.toggleMenu(menu);
+                    });
+    
+                    // Close menu when clicking outside
+                    window.addEventListener("click", (event) => {
+                        if (!menu.contains(event.target) && !dotsIcon.contains(event.target)) {
+                            menu.style.display = "none"; // Hide menu
+                        }
+                    });
+                });
+            }
+    
+            toggleMenu(menu) {
+                // Close all other menus before opening a new one
+                document.querySelectorAll(".options-menu").forEach(m => {
+                    if (m !== menu) {
+                        m.style.display = "none"; // Hide others
+                    }
+                });
+    
+                // Toggle current menu visibility
+                menu.style.display = (menu.style.display === "block") ? "none" : "block";
+            }
+        }
+    
+        // Initialize the dropdown functionality when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            new DropdownMenu();
+        });
+    </script>
+        <!-- video menu toggle js/ -->
+        <script>
+            function toggleVideoMenu() {
+                const menu = document.getElementById("video-menu");
+                menu.classList.toggle("show");
+            }
+        </script>
+
+          <!-- simple post validation started here-->
+          <script>
+            document.querySelectorAll('.simplepost_modal').forEach(modal => {
+                const textArea = modal.querySelector('.postDescription');
+                const postButton = modal.querySelector('.postButton');
+        
+                textArea.addEventListener('input', () => {
+                    postButton.disabled = textArea.value.trim().length < 10;
+                });
+        
+                postButton.addEventListener('click', () => {
+                    const description = textArea.value.trim();
+                    if (description) {
+                        console.log("Post submitted:", description);
+                        textArea.value = "";
+                        postButton.disabled = true;
+                        
+                        // Hide modal using Bootstrap modal instance
+                        const postModal = bootstrap.Modal.getInstance(modal);
+                        if (postModal) postModal.hide();
+                    }
+                });
+            });
+        </script>
+        <!-- simple post validation ended here-->
+          <!-- photo post validation started here-->
+          <script>
+            document.querySelectorAll('.photopost_modal').forEach(modal => {
+                const textArea = modal.querySelector('.postDescription');
+                const imageInput = modal.querySelector('.postImage');
+                const postButton = modal.querySelector('.postButton');
+                const imagePreviewContainer = modal.querySelector('.image-preview-container');
+                const imagePreview = modal.querySelector('.imagePreview');
+                const removeImageBtn = modal.querySelector('.removeImage');
+        
+                // Function to validate post
+                function validatePost() {
+                    const description = textArea.value.trim();
+                    const hasImage = imageInput.files.length > 0;
+                    postButton.disabled = description.length < 10 || !hasImage;
+                }
+        
+                // Function to preview image
+                function previewImage(event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            imagePreview.src = e.target.result;
+                            imagePreviewContainer.style.display = 'block';
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                    validatePost();
+                }
+        
+                // Function to remove image
+                function removeImage() {
+                    imageInput.value = "";
+                    imagePreviewContainer.style.display = 'none';
+                    validatePost();
+                }
+        
+                // Function to submit post
+                function submitPost() {
+                    const description = textArea.value.trim();
+                    if (description && imageInput.files.length > 0) {
+                        const imageFile = imageInput.files[0];
+                        console.log("Post submitted:", { description, imageFile });
+        
+                        // Clear inputs
+                        textArea.value = "";
+                        imageInput.value = "";
+                        imagePreviewContainer.style.display = 'none';
+                        validatePost();
+        
+                        // Hide modal
+                        const postModal = bootstrap.Modal.getInstance(modal);
+                        if (postModal) postModal.hide();
+                    }
+                }
+        
+                // Event Listeners
+                textArea.addEventListener('input', validatePost);
+                imageInput.addEventListener('change', previewImage);
+                removeImageBtn.addEventListener('click', removeImage);
+                postButton.addEventListener('click', submitPost);
+            });
+         </script>
+        <!-- photo post validation ended here-->
+        <!-- video post validation started here-->
+        <script>
+            function validatePost() {
+                const description = document.querySelector('.videopost_modal .postDescription').value.trim();
+                const video = document.querySelector('.videopost_modal .postVideo').files.length > 0;
+                const postButton = document.querySelector('.videopost_modal .btn-primary');
+                
+                // Enable button only if description is at least 10 characters and video is uploaded
+                postButton.disabled = !(description.length >= 10 && video);
+            }
+        
+            function previewVideo(event) {
+                const file = event.target.files[0];
+                const videoPreviewContainer = document.querySelector('.video-preview-container');
+                const videoPreview = document.querySelector('#videoPreview');
+        
+                if (file) {
+                    const fileURL = URL.createObjectURL(file);
+                    videoPreview.src = fileURL;
+                    videoPreviewContainer.style.display = "block";
+                }
+        
+                validatePost(); // Recheck validation when video is added
+            }
+        
+            function removeVideo() {
+                const videoInput = document.querySelector('.videopost_modal .postVideo');
+                const videoPreviewContainer = document.querySelector('.video-preview-container');
+                const videoPreview = document.querySelector('#videoPreview');
+        
+                videoInput.value = "";  // Clear the file input
+                videoPreview.src = "";  // Clear the preview
+                videoPreviewContainer.style.display = "none";
+        
+                validatePost(); // Recheck validation after removing video
+            }
+        
+            function submitPost() {
+                const description = document.querySelector('.videopost_modal .postDescription').value.trim();
+                const videoInput = document.querySelector('.videopost_modal .postVideo');
+        
+                if (description.length >= 10 && videoInput.files.length > 0) {
+                    const videoFile = videoInput.files[0];
+                    console.log("Post submitted:", { description, videoFile });
+        
+                    // Reset input fields
+                    document.querySelector('.videopost_modal .postDescription').value = "";
+                    videoInput.value = "";
+                    removeVideo(); // Hide video preview
+        
+                    validatePost(); // Revalidate to disable button
+        
+                    // Close modal
+                    var postModal = bootstrap.Modal.getInstance(document.querySelector('.videopost_modal'));
+                    postModal.hide();
+                }
+            }
+        </script>
+        <!-- video post validation ended here-->
+
+        <!-- donation post validation started here-->
+        <script>
+            const form = document.getElementById('donationForm');
+            const submitBtn = document.getElementById('submitBtn');
+    
+            form.addEventListener('input', function() {
+                let isValid = true;
+                document.querySelectorAll('#donationForm input, #donationForm select, #donationForm textarea').forEach(input => {
+                    if (!input.value) {
+                        isValid = false;
+                    }
+                });
+                submitBtn.disabled = !isValid;
+            });
+    
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                let isValid = true;
+                
+                document.querySelectorAll('#donationForm input, #donationForm select, #donationForm textarea').forEach(input => {
+                    if (!input.value) {
+                        input.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                });
+                
+                if (isValid) {
+                    alert('Donation post submitted successfully!');
+                    this.submit();
+                }
+            });
+            </script>
+        <!-- Donation post validation ended here-->
+
+         <!-- donation request validation started here-->
+         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const submitBtn = document.getElementById("submit-btn");
+              const form = document.getElementById("donation-form");
+          
+              function checkFields() {
+                const fields = form.querySelectorAll(".required-field");
+                let allValid = true;
+          
+                fields.forEach(field => {
+                  const type = field.getAttribute("type");
+                  const value = field.value.trim();
+          
+                  // General empty check
+                  if (!value) {
+                    allValid = false;
+                    return;
+                  }
+          
+                  // Email validation
+                  if (type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                    allValid = false;
+                  }
+          
+                  // Quantity validation
+                  if (type === "number") {
+                    const num = parseInt(value, 10);
+                    if (isNaN(num) || num < 1) {
+                      allValid = false;
+                    }
+                  }
+                });
+          
+                submitBtn.disabled = !allValid;
+              }
+          
+              // Watch all fields for changes
+              form.querySelectorAll(".required-field").forEach(field => {
+                field.addEventListener("input", checkFields);
+              });
+          
+              // Handle form submission
+              form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Donation request submitted successfully!");
+                form.reset();
+                submitBtn.disabled = true; // Reset the button state
+              });
+            });
+          </script>
+          
+        <!-- Donation request validation ended here-->
+
+    
+</body>
+</html>

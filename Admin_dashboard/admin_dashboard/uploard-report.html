@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+    <meta name="author" content="Bootlab">
+
+    <title>FoodTech-User Dashboard</title>
+
+    <!-- PICK ONE OF THE STYLES BELOW -->
+    <link href="../css/modern.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- END SETTINGS -->
+
+    <link rel="stylesheet" href="../css/contactUs.css">
+
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/FSSAILicense.css">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/Reports.css">
+    <link rel="stylesheet" href="../css/setting.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <nav id="sidebar" class="sidebar">
+            <a class="sidebar-brand" href="./index.html">
+                Logo
+            </a>
+            <div class="sidebar-content my-3">
+
+
+                <ul class="sidebar-nav">
+
+                    <li class="sidebar-item  mb-3">
+
+
+                        <a href="./index.html" class="sidebar-link">
+
+
+                            <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
+
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.5 6.66634V16.6663C0.5 16.8874 0.587797 17.0993 0.744078 17.2556C0.900358 17.4119 1.11232 17.4997 1.33333 17.4997H5.5C5.72101 17.4997 5.93297 17.4119 6.08925 17.2556C6.24554 17.0993 6.33333 16.8874 6.33333 16.6663V10.833H9.66667V16.6663C9.66667 16.8874 9.75446 17.0993 9.91074 17.2556C10.067 17.4119 10.279 17.4997 10.5 17.4997H14.6667C14.8877 17.4997 15.0996 17.4119 15.2559 17.2556C15.4122 17.0993 15.5 16.8874 15.5 16.6663V6.66634C15.5 6.53697 15.4699 6.40938 15.412 6.29366C15.3542 6.17795 15.2702 6.0773 15.1667 5.99968L8.5 0.999675C8.35575 0.891489 8.18031 0.833008 8 0.833008C7.81969 0.833008 7.64425 0.891489 7.5 0.999675L0.833333 5.99968C0.729837 6.0773 0.645834 6.17795 0.587977 6.29366C0.530121 6.40938 0.5 6.53697 0.5 6.66634ZM2.16667 7.08301L8 2.70801L13.8333 7.08301V15.833H11.3333V9.99968C11.3333 9.77866 11.2455 9.5667 11.0893 9.41042C10.933 9.25414 10.721 9.16634 10.5 9.16634H5.5C5.27899 9.16634 5.06702 9.25414 4.91074 9.41042C4.75446 9.5667 4.66667 9.77866 4.66667 9.99968V15.833H2.16667V7.08301Z"
+                                    fill="black" fill-opacity="0.8" />
+                            </svg>
+
+                            <span class="align-middle">Dashboards</span>
+                        </a>
+
+                    </li>
+                    <li class="sidebar-item  mb-3">
+
+
+                        <a href="./manage-user.html" class="sidebar-link">
+
+
+
+                            <svg width="20" height="20" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.94 15.3617H15.7217C15.8784 15.3641 16.0334 15.3286 16.1734 15.2581C16.3134 15.1877 16.4342 15.0843 16.5256 14.957C16.617 14.8297 16.6762 14.6821 16.6981 14.5269C16.7201 14.3717 16.7041 14.2135 16.6517 14.0658C16.1974 13.0934 15.4781 12.2688 14.5765 11.6866C13.6749 11.1044 12.6273 10.7881 11.5542 10.7742M11.5542 8.475C11.9552 8.47511 12.3523 8.39621 12.7229 8.24282C13.0934 8.08942 13.4301 7.86453 13.7137 7.58099C13.9973 7.29745 14.2223 6.96082 14.3758 6.59032C14.5293 6.21982 14.6083 5.8227 14.6083 5.42166C14.6094 5.01992 14.5312 4.62192 14.3782 4.25045C14.2252 3.87899 14.0004 3.54137 13.7167 3.25695C13.433 2.97253 13.0959 2.74689 12.7248 2.59297C12.3537 2.43906 11.9559 2.35989 11.5542 2.36M6.78332 8.57083C7.70144 8.56862 8.58119 8.2023 9.22954 7.55223C9.87789 6.90216 10.2419 6.02145 10.2417 5.10333C10.2417 4.1859 9.87721 3.30605 9.22849 2.65733C8.57977 2.00861 7.69992 1.64417 6.78249 1.64417C5.86506 1.64417 4.98521 2.00861 4.33649 2.65733C3.68777 3.30605 3.32332 4.1859 3.32332 5.10333C3.32332 6.02145 3.68753 6.90208 4.33603 7.55199C4.98454 8.2019 5.86437 8.56801 6.78249 8.57M10.6875 16.3558C10.981 16.3554 11.2687 16.2738 11.5187 16.1199C11.7687 15.9661 11.9712 15.746 12.1038 15.4842C12.2364 15.2223 12.294 14.9289 12.27 14.6363C12.2461 14.3437 12.1417 14.0635 11.9683 13.8267C11.3609 13.0204 10.579 12.362 9.68106 11.9008C8.78313 11.4395 7.79249 11.1874 6.78332 11.1633C5.77409 11.1875 4.7834 11.4398 3.88547 11.9011C2.98754 12.3625 2.20564 13.0211 1.59832 13.8275C1.42554 14.0644 1.32157 14.3444 1.29791 14.6366C1.27425 14.9289 1.33182 15.222 1.46425 15.4836C1.59668 15.7451 1.79882 15.965 2.04836 16.119C2.2979 16.2729 2.58513 16.3549 2.87832 16.3558H10.6875Z"
+                                    stroke="#555555" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+
+                            <span class="align-middle">Manage User</span>
+                        </a>
+
+                    </li>
+                    <li class="sidebar-item active mb-3">
+
+
+                        <a href="./repots.html" class="sidebar-link">
+
+
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 6.16667V3C2.5 2.86739 2.55268 2.74021 2.64645 2.64645C2.74021 2.55268 2.86739 2.5 3 2.5H7.83333C7.96594 2.5 8.09312 2.55268 8.18689 2.64645C8.28066 2.74021 8.33333 2.86739 8.33333 3V6.16667C8.33333 6.29927 8.28066 6.42645 8.18689 6.52022C8.09312 6.61399 7.96594 6.66667 7.83333 6.66667H3C2.86739 6.66667 2.74021 6.61399 2.64645 6.52022C2.55268 6.42645 2.5 6.29927 2.5 6.16667ZM11.6667 17V13.8333C11.6667 13.7007 11.7193 13.5735 11.8131 13.4798C11.9069 13.386 12.0341 13.3333 12.1667 13.3333H17C17.1326 13.3333 17.2598 13.386 17.3536 13.4798C17.4473 13.5735 17.5 13.7007 17.5 13.8333V17C17.5 17.1326 17.4473 17.2598 17.3536 17.3536C17.2598 17.4473 17.1326 17.5 17 17.5H12.1667C12.0341 17.5 11.9069 17.4473 11.8131 17.3536C11.7193 17.2598 11.6667 17.1326 11.6667 17ZM11.6667 10.3333V3C11.6667 2.86739 11.7193 2.74021 11.8131 2.64645C11.9069 2.55268 12.0341 2.5 12.1667 2.5H17C17.1326 2.5 17.2598 2.55268 17.3536 2.64645C17.4473 2.74021 17.5 2.86739 17.5 3V10.3333C17.5 10.4659 17.4473 10.5931 17.3536 10.6869C17.2598 10.7807 17.1326 10.8333 17 10.8333H12.1667C12.0341 10.8333 11.9069 10.7807 11.8131 10.6869C11.7193 10.5931 11.6667 10.4659 11.6667 10.3333ZM2.5 17V9.66667C2.5 9.53406 2.55268 9.40688 2.64645 9.31311C2.74021 9.21934 2.86739 9.16667 3 9.16667H7.83333C7.96594 9.16667 8.09312 9.21934 8.18689 9.31311C8.28066 9.40688 8.33333 9.53406 8.33333 9.66667V17C8.33333 17.1326 8.28066 17.2598 8.18689 17.3536C8.09312 17.4473 7.96594 17.5 7.83333 17.5H3C2.86739 17.5 2.74021 17.4473 2.64645 17.3536C2.55268 17.2598 2.5 17.1326 2.5 17Z"
+                                    stroke="#101010" stroke-width="1.5" />
+                            </svg>
+
+
+
+                            <span class="align-middle">Reports</span>
+                        </a>
+
+                    </li>
+                    <li class="sidebar-item  mb-3">
+
+
+                        <a href="./setting.html" class="sidebar-link">
+
+
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5833 10.55C16.4497 10.3979 16.376 10.2024 16.376 9.99999C16.376 9.79757 16.4497 9.60207 16.5833 9.44999L17.65 8.24999C17.7675 8.11888 17.8405 7.95391 17.8585 7.77875C17.8765 7.60359 17.8385 7.42723 17.75 7.27499L16.0833 4.39166C15.9957 4.23959 15.8624 4.11906 15.7023 4.04723C15.5422 3.97541 15.3635 3.95596 15.1917 3.99166L13.625 4.30833C13.4256 4.34952 13.2181 4.31632 13.0416 4.21499C12.865 4.11367 12.7317 3.95123 12.6667 3.75833L12.1583 2.23333C12.1024 2.06781 11.9959 1.92405 11.8539 1.82236C11.7118 1.72068 11.5414 1.66621 11.3667 1.66666H8.03333C7.85161 1.65718 7.67177 1.70743 7.5213 1.80976C7.37082 1.91208 7.25798 2.06084 7.2 2.23333L6.73333 3.75833C6.66833 3.95123 6.53497 4.11367 6.35842 4.21499C6.18187 4.31632 5.97434 4.34952 5.77499 4.30833L4.16666 3.99166C4.00379 3.96864 3.83774 3.99435 3.68945 4.06553C3.54116 4.13671 3.41725 4.25018 3.33333 4.39166L1.66666 7.27499C1.57596 7.42554 1.53518 7.6009 1.55015 7.77601C1.56511 7.95113 1.63506 8.11703 1.74999 8.24999L2.80833 9.44999C2.94193 9.60207 3.01561 9.79757 3.01561 9.99999C3.01561 10.2024 2.94193 10.3979 2.80833 10.55L1.74999 11.75C1.63506 11.883 1.56511 12.0489 1.55015 12.224C1.53518 12.3991 1.57596 12.5745 1.66666 12.725L3.33333 15.6083C3.42091 15.7604 3.55426 15.8809 3.71437 15.9528C3.87448 16.0246 4.05318 16.044 4.225 16.0083L5.79166 15.6917C5.99101 15.6505 6.19854 15.6837 6.37509 15.785C6.55164 15.8863 6.685 16.0488 6.74999 16.2417L7.25833 17.7667C7.31631 17.9391 7.42916 18.0879 7.57963 18.1902C7.73011 18.2926 7.90994 18.3428 8.09166 18.3333H11.425C11.5997 18.3338 11.7701 18.2793 11.9122 18.1776C12.0542 18.0759 12.1608 17.9322 12.2167 17.7667L12.725 16.2417C12.79 16.0488 12.9234 15.8863 13.0999 15.785C13.2764 15.6837 13.484 15.6505 13.6833 15.6917L15.25 16.0083C15.4218 16.044 15.6005 16.0246 15.7606 15.9528C15.9207 15.8809 16.0541 15.7604 16.1417 15.6083L17.8083 12.725C17.8968 12.5728 17.9348 12.3964 17.9168 12.2212C17.8989 12.0461 17.8259 11.8811 17.7083 11.75L16.5833 10.55ZM15.3417 11.6667L16.0083 12.4167L14.9417 14.2667L13.9583 14.0667C13.3581 13.944 12.7338 14.0459 12.2038 14.3532C11.6738 14.6604 11.2751 15.1515 11.0833 15.7333L10.7667 16.6667H8.63333L8.33333 15.7167C8.14154 15.1349 7.74281 14.6437 7.21283 14.3365C6.68285 14.0293 6.05851 13.9273 5.45833 14.05L4.47499 14.25L3.39166 12.4083L4.05833 11.6583C4.46829 11.2 4.69494 10.6066 4.69494 9.99166C4.69494 9.37672 4.46829 8.78335 4.05833 8.32499L3.39166 7.57499L4.45833 5.74166L5.44166 5.94166C6.04185 6.06435 6.66618 5.96239 7.19617 5.65516C7.72615 5.34792 8.12487 4.85679 8.31666 4.27499L8.63333 3.33333H10.7667L11.0833 4.28333C11.2751 4.86513 11.6738 5.35626 12.2038 5.66349C12.7338 5.97073 13.3581 6.07268 13.9583 5.94999L14.9417 5.74999L16.0083 7.59999L15.3417 8.34999C14.9363 8.80729 14.7125 9.39723 14.7125 10.0083C14.7125 10.6194 14.9363 11.2094 15.3417 11.6667ZM9.7 6.66666C9.04072 6.66666 8.39626 6.86216 7.84809 7.22843C7.29993 7.5947 6.87269 8.1153 6.6204 8.72438C6.3681 9.33347 6.30209 10.0037 6.43071 10.6503C6.55933 11.2969 6.8768 11.8908 7.34297 12.357C7.80915 12.8232 8.40309 13.1407 9.04969 13.2693C9.6963 13.3979 10.3665 13.3319 10.9756 13.0796C11.5847 12.8273 12.1053 12.4001 12.4716 11.8519C12.8378 11.3037 13.0333 10.6593 13.0333 9.99999C13.0333 9.11594 12.6821 8.26809 12.057 7.64297C11.4319 7.01785 10.5841 6.66666 9.7 6.66666ZM9.7 11.6667C9.37036 11.6667 9.04813 11.5689 8.77404 11.3858C8.49996 11.2026 8.28634 10.9423 8.1602 10.6378C8.03405 10.3333 8.00104 9.99815 8.06535 9.67484C8.12966 9.35154 8.2884 9.05457 8.52148 8.82148C8.75457 8.5884 9.05154 8.42966 9.37484 8.36535C9.69815 8.30104 10.0333 8.33405 10.3378 8.4602C10.6423 8.58634 10.9026 8.79996 11.0858 9.07404C11.2689 9.34813 11.3667 9.67036 11.3667 9.99999C11.3667 10.442 11.1911 10.8659 10.8785 11.1785C10.5659 11.4911 10.142 11.6667 9.7 11.6667Z"
+                                    fill="#4B4B4B" />
+                            </svg>
+
+
+
+                            <span class="align-middle">Settings</span>
+                        </a>
+
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <nav class="navbar navbar-expand navbar-theme  py-3"
+                style="background-color: rgba(245, 245, 245, 1) !important;">
+                <a class="sidebar-toggle d-flex d-md-none me-2">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+
+                <form class="d-none d-sm-block  navbarsearchmain">
+                    <input class=" " type="text" placeholder="Search projects...">
+
+                    <div class="search-iconss">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.4204 13.8296L12.5646 10.9738C13.1546 10.0845 13.5 9.01969 13.5 7.875C13.5 4.77338 10.9766 2.25 7.875 2.25C4.77338 2.25 2.25 4.77338 2.25 7.875C2.25 10.9766 4.77338 13.5 7.875 13.5C9.01969 13.5 10.0845 13.1546 10.9738 12.5646L13.8296 15.4204C14.2684 15.8597 14.9816 15.8597 15.4204 15.4204C15.8597 14.9811 15.8597 14.2689 15.4204 13.8296ZM3.9375 7.875C3.9375 5.70375 5.70375 3.9375 7.875 3.9375C10.0462 3.9375 11.8125 5.70375 11.8125 7.875C11.8125 10.0462 10.0462 11.8125 7.875 11.8125C5.70375 11.8125 3.9375 10.0462 3.9375 7.875Z"
+                                fill="#4B4B4B" />
+                        </svg>
+
+                    </div>
+                </form>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li>
+                            <div class="dropdown selectlang">
+                                <button class="btn   btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false"><span
+                                        class="flag-icon flag-icon-us mx-1"></span> <span
+                                        class="me-3 d-none d-md-inline">English</span></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item active" href="#"><span
+                                                class="flag-icon flag-icon-us me-1"></span> <span>English</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span
+                                                class="flag-icon flag-icon-fr me-1"></span> <span>French</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span
+                                                class="flag-icon flag-icon-es me-1"></span> <span>Spanich</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><span
+                                                class="flag-icon flag-icon-sa me-1"></span> <span>Arabic</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav-item dropdown mx-3 notificationicons ">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown"
+                                data-bs-toggle="dropdown">
+                                <div style="position: absolute; top: 0px; left: 20px;">
+                                    <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4488 12.37C13.0202 11.988 12.645 11.55 12.3332 11.0678C11.9929 10.4023 11.7889 9.67547 11.7332 8.93004V6.73448C11.7362 5.56364 11.3115 4.43203 10.5389 3.55225C9.76634 2.67247 8.69909 2.10509 7.53769 1.95671V1.38337C7.53769 1.22601 7.47518 1.07509 7.36391 0.963822C7.25264 0.852551 7.10172 0.790039 6.94436 0.790039C6.787 0.790039 6.63608 0.852551 6.52481 0.963822C6.41354 1.07509 6.35103 1.22601 6.35103 1.38337V1.96559C5.20003 2.12467 4.14568 2.69549 3.38326 3.57231C2.62084 4.44913 2.20202 5.57255 2.20436 6.73448V8.93004C2.14869 9.67547 1.9447 10.4023 1.60436 11.0678C1.29808 11.5489 0.928889 11.9868 0.50658 12.37C0.459172 12.4117 0.421176 12.463 0.395121 12.5204C0.369066 12.5779 0.355549 12.6403 0.355469 12.7034V13.3078C0.355469 13.4257 0.402294 13.5387 0.485644 13.6221C0.568993 13.7054 0.682039 13.7523 0.799913 13.7523H13.1555C13.2733 13.7523 13.3864 13.7054 13.4697 13.6221C13.5531 13.5387 13.5999 13.4257 13.5999 13.3078V12.7034C13.5998 12.6403 13.5863 12.5779 13.5603 12.5204C13.5342 12.463 13.4962 12.4117 13.4488 12.37ZM1.27991 12.8634C1.69343 12.4639 2.05751 12.0163 2.36436 11.53C2.79307 10.7262 3.04322 9.83938 3.09769 8.93004V6.73448C3.08006 6.21361 3.16744 5.69452 3.3546 5.20811C3.54176 4.72171 3.8249 4.27794 4.18713 3.90324C4.54937 3.52854 4.98331 3.23056 5.46311 3.02705C5.9429 2.82354 6.45874 2.71866 6.97991 2.71866C7.50108 2.71866 8.01693 2.82354 8.49672 3.02705C8.97652 3.23056 9.41045 3.52854 9.77269 3.90324C10.1349 4.27794 10.4181 4.72171 10.6052 5.20811C10.7924 5.69452 10.8798 6.21361 10.8621 6.73448V8.93004C10.9166 9.83938 11.1668 10.7262 11.5955 11.53C11.9023 12.0163 12.2664 12.4639 12.6799 12.8634H1.27991Z"
+                                            fill="#1C96C5" />
+                                    </svg>
+                                </div>
+
+
+                                <span class="indicator"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+                                aria-labelledby="alertsDropdown">
+                                <div class="dropdown-menu-header">
+                                    4 New Notifications
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-danger fas fa-fw fa-bell"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Update completed</div>
+                                                <div class="text-muted small mt-1">Restart server 12 to complete the
+                                                    update.</div>
+                                                <div class="text-muted small mt-1">2h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-warning fas fa-fw fa-envelope-open"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Lorem ipsum</div>
+                                                <div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate
+                                                    hendrerit et.</div>
+                                                <div class="text-muted small mt-1">6h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-primary fas fa-fw fa-building"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Login from 192.186.1.1</div>
+                                                <div class="text-muted small mt-1">8h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="ms-1 text-success fas fa-fw fa-bell-slash"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">New connection</div>
+                                                <div class="text-muted small mt-1">Anna accepted your request.</div>
+                                                <div class="text-muted small mt-1">12h ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-footer">
+                                    <a href="#" class="text-muted">Show all notifications</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown ms-lg-2">
+
+
+                            <a class="nav-link p-0 dropdown-toggle selectlang position-relative" href="#"
+                                id="userDropdown" data-bs-toggle="dropdown">
+                                <button class="btn   btn-lg" type="button"><span>
+
+                                        <img src="../img/dashboard/profile.png" width="20" alt="">
+                                    </span> <span class="me-3  d-none d-md-inline">Musfiq</span></button>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-user"></i>
+                                    View Profile</a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="align-middle me-1 fas fa-fw fa-comments"></i> Contacts</a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="align-middle me-1 fas fa-fw fa-chart-pie"></i> Analytics</a>
+                                <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-cogs"></i>
+                                    Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i
+                                        class="align-middle me-1 fas fa-fw fa-arrow-alt-circle-right"></i> Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content m-0">
+                <div class="container-fluid py-2 py-sm-4">
+        
+                  <h2 class="verification-heading"> Uploard Report</h2>
+                  <div class="form p-2 p-sm-4">
+        
+                    <form action="">
+                      <h3 class="verification-heading">Fill detail</h3>
+                      
+                        <div class="mb-3">
+                          <label for="firstName" class="form-label lable-text">Tital</label>
+                          <input type="text" class="form-input" id="firstName" placeholder="FSSAI License Application ">
+                        </div>
+                        <div class="mb-3">
+                          <label for="lastName" class="form-label lable-text">Price</label>
+                          <input type="text" class="form-input" id="lastName" placeholder="FSSAI License Application ">
+                        </div>
+                      
+                      <div class="mb-3">
+                        <label for="message" class="form-label lable-text">Description</label>
+                        <input type="text" class="form-input " id="send-messege" placeholder="">
+                      </div>
+                      
+                      
+        
+                      <div class="">
+                        <label for="message" class="form-label lable-text">Add ID Front PDF</label>
+                        <div class="upload__box position-relative idCard-uploard form-input">
+                            <div class="upload__btn-box">
+                                <label class="upload__btn">
+                                    <p><img src="../img/avatars/upload-img-svg.svg" alt="">Upload PDF</p>
+                                    <input type="file" accept="application/pdf" class="upload__inputfile">
+                                </label>
+                            </div>
+                            <div class="upload__file-wrap"></div>
+                        </div>
+                    </div>
+                      
+        
+                      <div class="mt-5 d-flex justify-content-end">
+                        <button class="btn py-2" type="button" data-bs-toggle="modal" data-bs-target="#successModal">Uploard PDF<img
+                            src="../img/avatars/go-forward-icon.svg" alt="" class="ms-3"></button>
+                      </div>
+                    </form>
+        
+                  </div>
+        
+                </div>
+              </main>
+            <!-- <footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-8 text-start">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms of Service</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-4 text-end">
+							<p class="mb-0">
+								&copy; 2023 - <a href="dashboard-default.html" class="text-muted">Spark</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer> -->
+        </div>
+    </div>
+
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
+                <path
+                    d="M448 273.001c-21.27 0-39.296 13.999-45.596 32.999h-38.857l-28.361-85.417a15.999 15.999 0 0 0-15.183-10.956c-.112 0-.224 0-.335.004a15.997 15.997 0 0 0-15.049 11.588l-44.484 155.262-52.353-314.108C206.535 54.893 200.333 48 192 48s-13.693 5.776-15.525 13.135L115.496 306H16v31.999h112c7.348 0 13.75-5.003 15.525-12.134l45.368-182.177 51.324 307.94c1.229 7.377 7.397 11.92 14.864 12.344.308.018.614.028.919.028 7.097 0 13.406-3.701 15.381-10.594l49.744-173.617 15.689 47.252A16.001 16.001 0 0 0 352 337.999h51.108C409.973 355.999 427.477 369 448 369c26.511 0 48-22.492 48-49 0-26.509-21.489-46.999-48-46.999z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <script src="../js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileInput = document.querySelector('.upload__inputfile');
+            const fileWrap = document.querySelector('.upload__file-wrap');
+    
+            fileInput.addEventListener('change', function(event) {
+                fileWrap.innerHTML = ''; // Clear existing files
+                const files = event.target.files;
+    
+                if (files.length > 0) {
+                    Array.from(files).forEach(file => {
+                        if (file.type === 'application/pdf') {
+                            const fileItem = document.createElement('div');
+                            fileItem.className = 'file-item';
+                            fileItem.textContent = `File: ${file.name}`;
+    
+                            const removeBtn = document.createElement('button');
+                            removeBtn.className = 'remove-btn';
+                            removeBtn.textContent = 'Remove';
+                            removeBtn.addEventListener('click', () => {
+                                fileInput.value = ''; // Clear file input
+                                fileWrap.innerHTML = ''; // Clear file wrap
+                            });
+    
+                            fileItem.appendChild(removeBtn);
+                            fileWrap.appendChild(fileItem);
+                        } else {
+                            alert('Only PDF files are allowed!');
+                            fileInput.value = ''; // Clear file input
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const pageItems = document.querySelectorAll('.page-item[data-page]');
+
+        let currentPage = 1;
+
+        function updatePagination() {
+            pageItems.forEach(item => {
+                item.classList.remove('active');
+                if (parseInt(item.getAttribute('data-page')) === currentPage) {
+                    item.classList.add('active');
+                }
+            });
+
+            prevBtn.classList.toggle('disabled', currentPage === 1);
+            nextBtn.classList.toggle('disabled', currentPage === pageItems.length);
+        }
+
+        pageItems.forEach(item => {
+            item.addEventListener('click', () => {
+                currentPage = parseInt(item.getAttribute('data-page'));
+                updatePagination();
+            });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePagination();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < pageItems.length) {
+                currentPage++;
+                updatePagination();
+            }
+        });
+
+        updatePagination();
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Line chart
+            new Chart(document.getElementById("chartjs-dashboard-line"), {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: "Orders",
+                        fill: true,
+                        backgroundColor: window.theme.primary,
+                        borderColor: window.theme.primary,
+                        borderWidth: 2,
+                        data: [3, 2, 3, 5, 6, 5, 4, 6, 9, 10, 8, 9]
+                    },
+                    {
+                        label: "Sales ($)",
+                        fill: true,
+                        backgroundColor: "rgba(0, 0, 0, 0.05)",
+                        borderColor: "rgba(0, 0, 0, 0.05)",
+                        borderWidth: 2,
+                        data: [5, 4, 10, 15, 16, 12, 10, 13, 20, 22, 18, 20]
+                    }
+                    ]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        intersect: false
+                    },
+                    hover: {
+                        intersect: true
+                    },
+                    plugins: {
+                        filler: {
+                            propagate: false
+                        }
+                    },
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            reverse: true,
+                            gridLines: {
+                                color: "rgba(0,0,0,0.0)"
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                stepSize: 5
+                            },
+                            display: true,
+                            gridLines: {
+                                color: "rgba(0,0,0,0)",
+                                fontColor: "#fff"
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Pie chart
+            new Chart(document.getElementById("chartjs-dashboard-pie"), {
+                type: 'pie',
+                data: {
+                    labels: ["Chrome", "Firefox", "IE", "Other"],
+                    datasets: [{
+                        data: [4401, 4003, 1589],
+                        backgroundColor: [
+                            window.theme.primary,
+                            window.theme.warning,
+                            window.theme.danger,
+                            "#E8EAED"
+                        ],
+                        borderColor: "transparent"
+                    }]
+                },
+                options: {
+                    responsive: !window.MSInputMethodContext,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    cutoutPercentage: 75
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Bar chart
+            new Chart(document.getElementById("chartjs-dashboard-bar"), {
+                type: 'bar',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: "This year",
+                        backgroundColor: window.theme.primary,
+                        borderColor: window.theme.primary,
+                        hoverBackgroundColor: window.theme.primary,
+                        hoverBorderColor: window.theme.primary,
+                        data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+                        barPercentage: .75,
+                        categoryPercentage: .5
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                display: false
+                            },
+                            stacked: false,
+                            ticks: {
+                                stepSize: 20
+                            }
+                        }],
+                        xAxes: [{
+                            stacked: false,
+                            gridLines: {
+                                color: "transparent"
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var map = new jsVectorMap({
+                map: "world",
+                selector: "#world_map",
+                zoomButtons: true,
+                selectedRegions: [
+                    'US',
+                    'SA',
+                    'DE',
+                    'FR',
+                    'CN',
+                    'AU',
+                    'BR',
+                    'IN',
+                    'GB'
+                ],
+                regionStyle: {
+                    initial: {
+                        fill: '#e4e4e4',
+                        "fill-opacity": 0.9,
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 0
+                    },
+                    selected: {
+                        fill: window.theme.primary,
+                    }
+                },
+                zoomOnScroll: false
+            });
+            window.addEventListener("resize", () => {
+                map.updateSize();
+            });
+            setTimeout(function () {
+                map.updateSize();
+            }, 250);
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#datatables-dashboard-projects').DataTable({
+                pageLength: 6,
+                lengthChange: false,
+                bFilter: false,
+                autoWidth: false
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#datetimepicker-dashboard').datetimepicker({
+                inline: true,
+                sideBySide: false,
+                format: 'L'
+            });
+        });
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+    <script>
+        if ($(".dropdown").length) {
+            $(document).on("click", ".dropdown-menu .dropdown-item", function (e) {
+                e.preventDefault();
+                if (!$(this).hasClass("active")) {
+                    var swalWithBootstrapButtons = Swal.mixin({
+                        customClass: {
+                            confirmButton: "btn btn-primary",
+                            cancelButton: "btn btn-danger me-3",
+                        },
+                        buttonsStyling: false,
+                    });
+                    swalWithBootstrapButtons
+                        .fire({
+                            title: "Are you sure?",
+                            text: "Do you really want to change your current language!",
+                            icon: "warning",
+                            confirmButtonText: "<i class='fas fa-check-circle me-1'></i> Yes, I am!",
+                            cancelButtonText: "<i class='fas fa-times-circle me-1'></i> No, I'm Not",
+                            showCancelButton: true,
+                            reverseButtons: true,
+                            focusConfirm: true,
+                        })
+                        .then((result) => {
+                            if (result.isConfirmed) {
+                                if (!$(this).hasClass("active")) {
+                                    // Remove "active" class from all items
+                                    $(".dropdown-menu .dropdown-item").removeClass("active");
+                                    $(this).addClass("active");
+
+                                    // Get the flag icon class from the clicked item
+                                    const flagIconClass = $(this).find(".flag-icon").attr("class");
+
+                                    // Update the button with the selected flag and text
+                                    $(this)
+                                        .parents(".dropdown")
+                                        .find(".btn")
+                                        .html(
+                                            "<span class='" +
+                                            flagIconClass +
+                                            " mx-1'></span><span class='me-3 d-none d-md-inline'>" +
+                                            $(this).text().trim() +
+                                            "</span>"
+                                        );
+                                }
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Amazing!",
+                                    text: "Your current language has been changed successfully.",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                });
+                            }
+                        });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

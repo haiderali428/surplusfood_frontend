@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/modern.css">
+    <title>Surplus_Food|Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --light-gray: #494949;
+  --accent:  #ff9900;
+  --dark-bg: #0C8C85;
+  --input-bg: #FFFFFF;
+  --red: #DF2B20;
+  --primary-text: #FFFFFF;
+  --secondary-text: #9F9F9F;
+  --faded-accent: rgba(238, 196, 139, 0.15);
+}
+
+*, *::before, *::after {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  width: 95% !important;
+  /* min-height: 100vh; */
+  /* background: #080808; */
+  color: var(--primary-text);
+}
+
+#staged-form {
+  background: var(--dark-bg);
+  /* max-width: 530px; */
+  /* width: 100%; */
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--faded-accent);
+}
+
+#staged-form h2 {
+  margin: 0 0 12px 0;
+}
+
+
+/* ---------- STAGE PROGRESS ---------- */
+#stage-progress {
+  list-style: none;
+  width: 80%;
+}
+
+#stage-progress li {
+  float: left;
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#stage-progress li::before {
+  display: block;
+  content: "";
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin: 0 auto 5px auto;
+  border: 4px solid var(--light-gray);
+  background: var(--light-gray);
+  transition: border 0.1s ease-in-out 0s, background 0.1s ease-in-out 0s;
+}
+
+#stage-progress li::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 40px);
+  height: 4px;
+  border-radius: 5px;
+  background: var(--light-gray);
+  left: calc(-50% + 20px);
+	top: 14px;
+  background: linear-gradient(90deg, var(--accent) 50%, var(--light-gray) 50%);
+  background-size: 210% 100%;
+  background-position: -95% 0;
+  transition: background-position 0.3s ease-in-out;
+}
+
+#stage-progress li:first-child::after {
+  content: none;
+}
+
+#stage-progress li.active-stage::before {
+  border-color: var(--accent);
+  transition: border 0.1s ease-in-out 0.3s, background 0.1s ease-in-out 0.3s;
+}
+
+#stage-progress li.active-stage::after {
+  background-position: -190% 0;
+}
+
+#stage-progress li:has(~ .active-stage)::before, #stage-progress li:has(~ .active-stage)::after {
+  border-color: var(--accent);
+  background: var(--accent);
+  background-position: -190% 0;
+}
+
+
+/* ---------- FORMS ---------- */
+main {
+  width: 100%;
+  overflow: hidden;
+  margin: 24px 0;
+  position: relative;
+}
+
+.registration-form {
+  width: 100%;
+  /* padding: 0 24px; */
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+#form-section {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+main::before, main::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 24px;
+  top: 0;
+  z-index: 1;
+}
+
+
+/* ---------- NAVIGATION BUTTONS ---------- */
+#form-navigation button {
+  font-size: 14px;
+  font-weight: Bold;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--dark-bg);
+  position: relative;
+}
+
+.primary-btn {
+  
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  border: none;
+  transition: background-position 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  background-position: 0 0;
+}
+
+.secondary-btn {
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  border: none;
+  z-index: 3;
+  transition: background-position 0.3s ease-in-out;
+}
+
+.secondary-btn:hover, .secondary-btn:hover::after{
+  background-position: 0 0;
+}
+
+.secondary-btn::before {
+  position: absolute;
+  content: "";
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  background: var(--dark-bg);
+  z-index: -1;
+}
+
+.secondary-btn::after {
+  content: "⟵ Prev Step";
+  background: #ffffff;
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.3s ease-in-out;
+}
+
+#prev, #save {
+  display: none;
+}
+#staged-form{
+    max-width: 600px !important;
+    margin-left: 2%;
+}
+@media(max-width: 600px){
+    #staged-form{
+        max-width: 530px !important;
+        margin-left: 2%;
+    }
+    .registration-form {
+    width: 90% !important;
+    /* padding: 0 24px; */
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+}
+@media(max-width: 550px){
+    #staged-form{
+        max-width: 500px !important;
+        margin-left: 2%;
+    }
+    .registration-form {
+    width: 83% !important;
+    /* padding: 0 24px; */
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+}
+@media(max-width: 500px){
+    #staged-form{
+        max-width: 450px !important;
+        margin-left: 2%;
+    }
+    .registration-form {
+    width: 76% !important;
+    /* padding: 0 24px; */
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+}
+@media(max-width: 450px){
+    #staged-form{
+        max-width: 400px !important;
+        margin-left: 2%;
+    }
+    .registration-form {
+    width: 67% !important;
+    /* padding: 0 24px; */
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+}
+@media(max-width: 400px){
+    #staged-form{
+        max-width: 350px !important;
+        margin-left: 2%;
+    }
+    .registration-form {
+    width: 59% !important;
+    /* padding: 0 24px; */
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+}
+@media(max-width: 350px){
+    #staged-form{
+        max-width: 300px !important;
+        margin-left: 2%;
+    }
+    .registration-form {
+    width: 55% !important;
+    /* padding: 0 24px; */
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+}
+    </style>
+</head>
+<body>
+    <!--######### header started from here #########-->
+    <header class="headerbackroud shadow">
+    <div class="d-flex container  justify-content-between align-items-center p-3  ">
+        <div>
+        <a href="" class="auth-logo"> 
+            <!-- <img src="/logo.png" alt="Logo" class="img-fluid" style="height: 50px;">  -->
+            Surplus Food </a>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+        <a href="./login.html"> <button class="btn btn-outline-secondary">Log In</button> </a>
+         <a href="./signup.html"> <button class="btn btn-outline-secondary">Sign Up</button> </a>
+        </div>
+    </div>
+    </header>
+    <!--######## header ended from here #########-->
+
+
+      <main>
+        <section id="staged-form">
+            
+            <ul id="stage-progress">
+              <li class="active-stage">Specify your location</li>
+              <li>Verify your phone number</li>
+              <li>Complete Registration</li>
+              
+            </ul>
+            
+            <main>
+              <div id="form-section" >
+                <form class="registration-form px-2">
+                 <div class="registerd-emailhere px-2 py-2 bg-white mb-3" style="color: #000000; border-radius: 10px;">
+                    <p class="mb-0">Email:haiderali.webdev2003@gmail.com</p>
+                 </div>
+                  <div class="input-group d-flex flex-column">
+                    <label for="" class="input-label">First Name</label>
+                    <input type="text" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="First Name" required>
+                  </div>
+                  <div class="input-group d-flex flex-column">
+                    <label for="" class="input-label">Last Name</label>
+                    <input type="text" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="Last Name" required>
+                  </div>
+                  <div class="input-group d-flex flex-column">
+                    <label for="" class="input-label">Address</label>
+                    <textarea name="" style="border-radius: 10px;"  class="form-control surplus-login-input w-100 mb-3 p-2 " id="" placeholder="Address"></textarea>
+                  </div>
+                  <div class="input-group d-flex flex-column">
+                    <label for="" class="input-label">Zip Code</label>
+                    <input type="number" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="Zip Code" required>
+                  </div>
+                </form>
+                <form class="registration-form px-2">
+                  <div class="input-group d-flex flex-column">
+                    <label for="" class="input-label">Number</label>
+                    <input type="number" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="Enter Number" required>
+                  </div>
+                </form>
+                <form class="registration-form px-2 ">
+                  <div class="input-group d-flex flex-column">
+                    <label for="" class="input-label">Enter Otp</label>
+                    <div class="row"> 
+                      <div class="col-3">
+                       <input type="number" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="0" required>
+                      </div>
+                      <div class="col-3">
+                        <input type="number" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="0" required>
+                       </div>
+                       <div class="col-3">
+                        <input type="number" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="0" required>
+                       </div>
+                       <div class="col-3">
+                        <input type="number" class="form-control surplus-login-input w-100 mb-3 p-2 " style="border-radius: 10px;" placeholder="0" required>
+                       </div>
+                  </div>
+                  </div>
+
+                </form>
+              </div>
+            </main>
+            
+            <div id="form-navigation">
+              <button class="secondary-btn" id="prev"></button>
+              <button class="primary-btn" id="next">Next Step &#x27F6;</button>
+              <button class="primary-btn" id="save">Save &#x27F6;</button>
+            </div>
+          </section>
+       
+      </main>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+      <script>
+        const prevBtn = document.querySelector("#prev");
+const nextBtn = document.querySelector("#next");
+const saveBtn = document.querySelector("#save");
+const stageProgress = document.querySelector("#stage-progress");
+const formSection = document.querySelector("#form-section");
+
+let currentStage = 0;
+
+const updateForm = (progression) => {
+  currentStage += progression;
+  for(let i = 0; i < stageProgress.children.length; i++ ){
+    if(i === currentStage) {
+      stageProgress.children.item(i).classList.add("active-stage");
+      continue;
+    }
+    stageProgress.children.item(i).classList.remove("active-stage");
+  }
+  
+  formSection.style.transform = `translateX(-${currentStage * 100}%)`;
+  
+  if(currentStage === 0){
+    prevBtn.style.display = "none";
+  } else if (currentStage === 2){
+    nextBtn.style.display = "none";
+    saveBtn.style.display = "inline-block";
+  } else if (currentStage !== 0){
+    prevBtn.style.display = "inline-block";
+    nextBtn.style.display = "inline-block";
+    saveBtn.style.display = "none";
+  }
+}
+
+prevBtn.addEventListener("click", () => updateForm(-1))
+nextBtn.addEventListener("click", () => updateForm(+1))
+      </script>
+</body>
+</html>
