@@ -48,15 +48,37 @@
                   </li>
                   
                   
-                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">NGO's</a></li>
               </ul>
+              <div class="d-flex flex-column gap-2 mt-3 d-lg-none">
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target=".needy-person-modal">
+                    Add Needy Person
+                  </button>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle custom-dropdown d-flex align-items-center gap-2 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;">
+                    <img src="./img/avatars/avatar-2.jpg" style="width: 32px; height: 32px; border-radius: 50%;">
+                    <div class="me-2">
+                      <p class="mb-0 profile-name1">Taylor Hill</p>
+                      <p class="mb-0 profile-name" style="margin-left: -8px;">taylorh77</p>
+                    </div>
+                    <img src="./img/sidebar/dd.svg" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
       
             <!-- Profile Dropdown on the Right for Larger Screens -->
             <div class="d-none d-lg-flex align-items-center gap-3">
-              <a href="./signup.html">
-                <button class="btn btn-outline-secondary">Add Needy Person</button>
-              </a>
+              
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target=".needy-person-modal">
+                    Add Needy Person
+                  </button>
+              
               <div class="dropdown">
                 <button class="btn dropdown-toggle custom-dropdown d-flex align-items-center gap-2 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;">
                   <img src="./img/avatars/avatar-2.jpg" style="width: 32px; height: 32px; border-radius: 50%;">
@@ -1210,6 +1232,67 @@
            
         <!-- Donation request modal ended from here -->
 
+        <!-- register needy person modal started here -->
+         <!-- Needy Person Registration Modal -->
+            <div class="modal fade needy-person-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title">Register Needy Person</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form id="needy-person-form" enctype="multipart/form-data">
+            <div class="row ">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="mb-3 col-md-6">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+        </div>
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Enter phone number" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Address</label>
+              <textarea class="form-control" rows="3" placeholder="Enter address" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Add CNIC front side image</label>
+              <input type="file" class="form-control" accept="image/*" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Add CNIC back side image</label>
+                <input type="file" class="form-control" accept="image/*" required>
+              </div>
+            <div class="mb-3">
+              <label class="form-label">Select NGO</label>
+              <select class="form-select" required>
+                <option value="">Select NGO</option>
+                <option value="ngo1">Helping Hands Foundation</option>
+                <option value="ngo2">Care for All</option>
+                <option value="ngo3">Hope Society</option>
+                <!-- Add more NGOs as needed -->
+              </select>
+            </div>
+          </form>
+        </div>
+  
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" form="needy-person-form">Register Person</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+        <!-- register needy person modal ended here -->
+    
 
 
 
