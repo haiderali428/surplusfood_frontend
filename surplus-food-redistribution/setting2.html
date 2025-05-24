@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/modern.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>Document</title>
+</head>
+<body>
+   
+     <!-- ********* Header-section start *********** -->
+     <header class="suplus-header sticky-top">
+        <nav class="py-2 navbar navbar-expand-lg bg-body-tertiary" style="background: transparent !important;">
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="#" style="font-weight: 700; font-size: 20px;">
+              <div class="d-flex align-items-center gap-2 text-white">Suplus Food</div>
+            </a>
+      
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customNavbar" aria-controls="customNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Centered Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="customNavbar">
+              <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
+                <li class="nav-item dropdown engagements-dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="engagementsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Engagements
+                      <img src="./img/sidebar/dd.svg" class="ms-2 dropdown-arrow" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="engagementsDropdown">
+                      <li><a class="dropdown-item" href="#">Donations</a></li>
+                      <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                      <li><a class="dropdown-item" href="#">Events</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                <li class="nav-item"><a class="nav-link" href="#">NGO's</a></li>
+              </ul>
+              <div class="d-flex flex-column gap-2 mt-3 d-lg-none">
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target=".needy-person-modal">
+                    Add Needy Person
+                  </button>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle custom-dropdown d-flex align-items-center gap-2 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;">
+                    <img src="./img/avatars/avatar-2.jpg" style="width: 32px; height: 32px; border-radius: 50%;">
+                    <div class="me-2">
+                      <p class="mb-0 profile-name1">Taylor Hill</p>
+                      <p class="mb-0 profile-name" style="margin-left: -8px;">taylorh77</p>
+                    </div>
+                    <img src="./img/sidebar/dd.svg" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Profile Dropdown on the Right for Larger Screens -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target=".needy-person-modal">
+                    Add Needy Person
+                  </button>
+              
+              <div class="dropdown">
+                <button class="btn dropdown-toggle custom-dropdown d-flex align-items-center gap-2 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;">
+                  <img src="./img/avatars/avatar-2.jpg" style="width: 32px; height: 32px; border-radius: 50%;">
+                  <div class="me-2">
+                    <p class="mb-0 profile-name1">Taylor Hill</p>
+                    <p class="mb-0 profile-name" style="margin-left: -8px;">taylorh77</p>
+                  </div>
+                  <img src="./img/sidebar/dd.svg" alt="Dropdown icon" style="width: 10px; height: 5px; filter: brightness(0) invert(1);">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>    
+    <!-- ********* Header-section end *********** -->
+
+    <div class="container">
+        <div class="row">
+           
+            Haider
+        </div>
+    </div>
+
+            <!-- simple post modal started from here -->
+            <div class="modal fade simplepost_modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="postModalLabel">Create Simple Post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <textarea class="form-control postDescription" placeholder="Write your post..."></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary postButton" disabled>Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- simple post modal ended from here -->
+
+    
+    <!-- photo post modal started from here -->
+    <div class="modal fade photopost_modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Create Photo Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control postDescription" placeholder="Write your post..."></textarea>
+                    <input type="file" class="form-control mt-2 postImage" accept="image/*">
+                    
+                    <div class="image-preview-container mt-2" style="position: relative; display: none;">
+                        <img class="imagePreview w-100" style="height: 500px; object-fit: cover;" alt="Image Preview">
+                        <button type="button" class="btn btn-danger btn-sm removeImage" style="position: absolute; top: 10px; right: 10px;">&times;</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary postButton" disabled>Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- photo post modal ended from here -->
+        
+        <!-- video post modal started from here -->
+        <div class="modal fade videopost_modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="postModalLabel">Create Video Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control postDescription" placeholder="Write your post..." oninput="validatePost()"></textarea>
+                        <input type="file" class="form-control mt-2 postVideo" accept="video/*" onchange="previewVideo(event)">
+                        
+                        <div class="video-preview-container mt-2" style="position: relative; display: none;">
+                            <video id="videoPreview" class="w-100" style="height: 500px; object-fit: cover;" controls></video>
+                            <button type="button" class="btn btn-danger btn-sm" style="position: absolute; top: 10px; right: 10px;" onclick="removeVideo()">&times;</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="submitPost()" disabled>Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <!-- video post modal ended from here -->
+
+        <!-- Donation post modal started from here -->
+        <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="donationModalLabel">Upload Donation Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="donationForm">
+                            <div class="mb-3">
+                                <label for="itemName" class="form-label">Item Name</label>
+                                <input type="text" class="form-control" id="itemName" name="itemName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" name="quantity" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expiryDate" class="form-label">Expiry Date</label>
+                                <input type="date" class="form-control" id="expiryDate" name="expiryDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Category</label>
+                                <select class="form-select" id="category" name="category" required>
+                                    <option value="">Select category</option>
+                                    <option value="food">Food</option>
+                                    <option value="clothing">Clothing</option>
+                                    <option value="medicine">Medicine</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imageUpload" class="form-label">Upload Image</label>
+                                <input type="file" class="form-control" id="imageUpload" name="imageUpload" accept="image/*" required>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Donation post modal ended from here -->
+
+         <!-- Donation request modal started from here -->
+         <div class="modal fade donation-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <div class="modal-header">
+                  <h5 class="modal-title">Donation Request Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <div class="modal-body">
+                  <form id="donation-form">
+                    <div class="mb-3">
+                      <label class="form-label">First Name</label>
+                      <input type="text" class="form-control required-field" placeholder="Enter first name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Last Name</label>
+                      <input type="text" class="form-control required-field" placeholder="Enter last name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control required-field" placeholder="Enter email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Complete Address</label>
+                      <textarea class="form-control required-field" rows="3" placeholder="Enter your complete address" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Contact Number</label>
+                      <input type="tel" class="form-control required-field" placeholder="Enter contact number" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Requested Quantity</label>
+                      <input type="number" class="form-control required-field" placeholder="Enter quantity to request" min="1" required>
+                    </div>
+                  </form>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Submit Request</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+           
+        <!-- Donation request modal ended from here -->
+
+        <!-- register needy person modal started here -->
+         <!-- Needy Person Registration Modal -->
+            <div class="modal fade needy-person-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title">Register Needy Person</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form id="needy-person-form" enctype="multipart/form-data">
+            <div class="row ">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="mb-3 col-md-6">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+        </div>
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Enter phone number" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Address</label>
+              <textarea class="form-control" rows="3" placeholder="Enter address" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Add CNIC front side image</label>
+              <input type="file" class="form-control" accept="image/*" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Add CNIC back side image</label>
+                <input type="file" class="form-control" accept="image/*" required>
+              </div>
+            <div class="mb-3">
+              <label class="form-label">Select NGO</label>
+              <select class="form-select" required>
+                <option value="">Select NGO</option>
+                <option value="ngo1">Helping Hands Foundation</option>
+                <option value="ngo2">Care for All</option>
+                <option value="ngo3">Hope Society</option>
+                <!-- Add more NGOs as needed -->
+              </select>
+            </div>
+          </form>
+        </div>
+  
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" form="needy-person-form">Register Person</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+        <!-- register needy person modal ended here -->
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        class DropdownMenu {
+            constructor() {
+                this.init();
+            }
+    
+            init() {
+                // Get all menu containers
+                const menuContainers = document.querySelectorAll(".menu-container");
+    
+                menuContainers.forEach(container => {
+                    const dotsIcon = container.querySelector(".dots-icon");
+                    const menu = container.querySelector(".options-menu");
+    
+                    // Toggle menu when clicking the dots icon
+                    dotsIcon.addEventListener("click", (event) => {
+                        event.stopPropagation();
+                        this.toggleMenu(menu);
+                    });
+    
+                    // Close menu when clicking outside
+                    window.addEventListener("click", (event) => {
+                        if (!menu.contains(event.target) && !dotsIcon.contains(event.target)) {
+                            menu.style.display = "none"; // Hide menu
+                        }
+                    });
+                });
+            }
+    
+            toggleMenu(menu) {
+                // Close all other menus before opening a new one
+                document.querySelectorAll(".options-menu").forEach(m => {
+                    if (m !== menu) {
+                        m.style.display = "none"; // Hide others
+                    }
+                });
+    
+                // Toggle current menu visibility
+                menu.style.display = (menu.style.display === "block") ? "none" : "block";
+            }
+        }
+    
+        // Initialize the dropdown functionality when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            new DropdownMenu();
+        });
+    </script>
+        <!-- video menu toggle js/ -->
+        <script>
+            function toggleVideoMenu() {
+                const menu = document.getElementById("video-menu");
+                menu.classList.toggle("show");
+            }
+        </script>
+
+          <!-- simple post validation started here-->
+          <script>
+            document.querySelectorAll('.simplepost_modal').forEach(modal => {
+                const textArea = modal.querySelector('.postDescription');
+                const postButton = modal.querySelector('.postButton');
+        
+                textArea.addEventListener('input', () => {
+                    postButton.disabled = textArea.value.trim().length < 10;
+                });
+        
+                postButton.addEventListener('click', () => {
+                    const description = textArea.value.trim();
+                    if (description) {
+                        console.log("Post submitted:", description);
+                        textArea.value = "";
+                        postButton.disabled = true;
+                        
+                        // Hide modal using Bootstrap modal instance
+                        const postModal = bootstrap.Modal.getInstance(modal);
+                        if (postModal) postModal.hide();
+                    }
+                });
+            });
+        </script>
+        <!-- simple post validation ended here-->
+          <!-- photo post validation started here-->
+          <script>
+            document.querySelectorAll('.photopost_modal').forEach(modal => {
+                const textArea = modal.querySelector('.postDescription');
+                const imageInput = modal.querySelector('.postImage');
+                const postButton = modal.querySelector('.postButton');
+                const imagePreviewContainer = modal.querySelector('.image-preview-container');
+                const imagePreview = modal.querySelector('.imagePreview');
+                const removeImageBtn = modal.querySelector('.removeImage');
+        
+                // Function to validate post
+                function validatePost() {
+                    const description = textArea.value.trim();
+                    const hasImage = imageInput.files.length > 0;
+                    postButton.disabled = description.length < 10 || !hasImage;
+                }
+        
+                // Function to preview image
+                function previewImage(event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            imagePreview.src = e.target.result;
+                            imagePreviewContainer.style.display = 'block';
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                    validatePost();
+                }
+        
+                // Function to remove image
+                function removeImage() {
+                    imageInput.value = "";
+                    imagePreviewContainer.style.display = 'none';
+                    validatePost();
+                }
+        
+                // Function to submit post
+                function submitPost() {
+                    const description = textArea.value.trim();
+                    if (description && imageInput.files.length > 0) {
+                        const imageFile = imageInput.files[0];
+                        console.log("Post submitted:", { description, imageFile });
+        
+                        // Clear inputs
+                        textArea.value = "";
+                        imageInput.value = "";
+                        imagePreviewContainer.style.display = 'none';
+                        validatePost();
+        
+                        // Hide modal
+                        const postModal = bootstrap.Modal.getInstance(modal);
+                        if (postModal) postModal.hide();
+                    }
+                }
+        
+                // Event Listeners
+                textArea.addEventListener('input', validatePost);
+                imageInput.addEventListener('change', previewImage);
+                removeImageBtn.addEventListener('click', removeImage);
+                postButton.addEventListener('click', submitPost);
+            });
+         </script>
+        <!-- photo post validation ended here-->
+        <!-- video post validation started here-->
+        <script>
+            function validatePost() {
+                const description = document.querySelector('.videopost_modal .postDescription').value.trim();
+                const video = document.querySelector('.videopost_modal .postVideo').files.length > 0;
+                const postButton = document.querySelector('.videopost_modal .btn-primary');
+                
+                // Enable button only if description is at least 10 characters and video is uploaded
+                postButton.disabled = !(description.length >= 10 && video);
+            }
+        
+            function previewVideo(event) {
+                const file = event.target.files[0];
+                const videoPreviewContainer = document.querySelector('.video-preview-container');
+                const videoPreview = document.querySelector('#videoPreview');
+        
+                if (file) {
+                    const fileURL = URL.createObjectURL(file);
+                    videoPreview.src = fileURL;
+                    videoPreviewContainer.style.display = "block";
+                }
+        
+                validatePost(); // Recheck validation when video is added
+            }
+        
+            function removeVideo() {
+                const videoInput = document.querySelector('.videopost_modal .postVideo');
+                const videoPreviewContainer = document.querySelector('.video-preview-container');
+                const videoPreview = document.querySelector('#videoPreview');
+        
+                videoInput.value = "";  // Clear the file input
+                videoPreview.src = "";  // Clear the preview
+                videoPreviewContainer.style.display = "none";
+        
+                validatePost(); // Recheck validation after removing video
+            }
+        
+            function submitPost() {
+                const description = document.querySelector('.videopost_modal .postDescription').value.trim();
+                const videoInput = document.querySelector('.videopost_modal .postVideo');
+        
+                if (description.length >= 10 && videoInput.files.length > 0) {
+                    const videoFile = videoInput.files[0];
+                    console.log("Post submitted:", { description, videoFile });
+        
+                    // Reset input fields
+                    document.querySelector('.videopost_modal .postDescription').value = "";
+                    videoInput.value = "";
+                    removeVideo(); // Hide video preview
+        
+                    validatePost(); // Revalidate to disable button
+        
+                    // Close modal
+                    var postModal = bootstrap.Modal.getInstance(document.querySelector('.videopost_modal'));
+                    postModal.hide();
+                }
+            }
+        </script>
+        <!-- video post validation ended here-->
+
+        <!-- donation post validation started here-->
+        <script>
+            const form = document.getElementById('donationForm');
+            const submitBtn = document.getElementById('submitBtn');
+    
+            form.addEventListener('input', function() {
+                let isValid = true;
+                document.querySelectorAll('#donationForm input, #donationForm select, #donationForm textarea').forEach(input => {
+                    if (!input.value) {
+                        isValid = false;
+                    }
+                });
+                submitBtn.disabled = !isValid;
+            });
+    
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                let isValid = true;
+                
+                document.querySelectorAll('#donationForm input, #donationForm select, #donationForm textarea').forEach(input => {
+                    if (!input.value) {
+                        input.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                });
+                
+                if (isValid) {
+                    alert('Donation post submitted successfully!');
+                    this.submit();
+                }
+            });
+            </script>
+        <!-- Donation post validation ended here-->
+
+         <!-- donation request validation started here-->
+         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const submitBtn = document.getElementById("submit-btn");
+              const form = document.getElementById("donation-form");
+          
+              function checkFields() {
+                const fields = form.querySelectorAll(".required-field");
+                let allValid = true;
+          
+                fields.forEach(field => {
+                  const type = field.getAttribute("type");
+                  const value = field.value.trim();
+          
+                  // General empty check
+                  if (!value) {
+                    allValid = false;
+                    return;
+                  }
+          
+                  // Email validation
+                  if (type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                    allValid = false;
+                  }
+          
+                  // Quantity validation
+                  if (type === "number") {
+                    const num = parseInt(value, 10);
+                    if (isNaN(num) || num < 1) {
+                      allValid = false;
+                    }
+                  }
+                });
+          
+                submitBtn.disabled = !allValid;
+              }
+          
+              // Watch all fields for changes
+              form.querySelectorAll(".required-field").forEach(field => {
+                field.addEventListener("input", checkFields);
+              });
+          
+              // Handle form submission
+              form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Donation request submitted successfully!");
+                form.reset();
+                submitBtn.disabled = true; // Reset the button state
+              });
+            });
+          </script>
+          
+        <!-- Donation request validation ended here-->
+
+    
+</body>
+</html>
