@@ -662,3 +662,18 @@ color: #495057;
     font-size: 14px !important;
   }
 }
+.acount-delete{
+  background: red !important;
+    text-align: center;
+    color: white !important;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent !important;
+    border-radius: 10px;
+}
+.acount-delete:hover{
+  background: transparent !important ;
+  border: 2px solid red !important;
+  color: red !important;
+   
+}
