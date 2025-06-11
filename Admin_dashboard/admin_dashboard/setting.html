@@ -351,19 +351,36 @@
                                         <div
                                             class="food-updateprofile-right d-flex flex-sm-row flex-column gap-md-3 gap-2 align-items-center justify-content-between">
                                             <div
-                                                class="d-flex flex-wrap justify-content-center  my-2 align-items-center gap-3">
-                                                <img src="../img/dashboard/profile-imgggss.png"
-                                                    style="width: 100px; height: 100px; border-radius: 50%;" alt=""
-                                                    class="align-items-center">
+                                                class="d-flex flex-wrap justify-content-center my-2 align-items-center gap-3 position-relative">
+
+                                                <!-- Profile image with camera overlay -->
+                                                <div class="position-relative">
+                                                    <img id="profileImage" src="../img/dashboard/profile-imgggss.png"
+                                                        style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;"
+                                                        alt="Profile" class="align-items-center">
+
+                                                    <!-- Camera icon label -->
+                                                    <label for="profileInput"
+                                                        class="position-absolute   text-white rounded-circle px-2 py-1"
+                                                        style="    cursor: pointer; transform: translate(10%, 10%); background: rgba(255, 210, 27, 1); bottom: 1%; right: 0;">
+                                                        <i class="fas fa-camera"></i>
+                                                    </label>
+
+                                                    <!-- Hidden file input -->
+                                                    <input type="file" id="profileInput" accept="image/*"
+                                                        style="display: none;">
+                                                </div>
+
+                                                <!-- Username and email -->
                                                 <div class="food-username">
                                                     <p class="mb-2">Alexa Rawles</p>
-                                                    <span> alexarawles@gmail.com</span>
-
-
+                                                    <span>alexarawles@gmail.com</span>
                                                 </div>
                                             </div>
+
+                                            <!-- Verify Documents button -->
                                             <div class="profile-verify mb-sm-0 mb-3 mt-2 mt-sm-0">
-                                                <a href="" class="py-lg-3 py-2  px-2">Verify Documents</a>
+                                                <a href="#" class="py-lg-3 py-2 px-2">Verify Documents</a>
                                             </div>
                                         </div>
 
@@ -405,29 +422,29 @@
                                                         placeholder="+19|345566">
                                                 </div>
                                                 <div class="row">
-                                                <div class="col-sm-6 mb-3">
-                                                    <!-- Password Field -->
-                                                    <label for="passwordInput"
-                                                        class="form-label lable-text">Password</label>
-                                                    <div class="input-group position-relative">
-                                                        <input type="password" id="passwordInput" class="form-input"
-                                                            placeholder="Enter your password">
-                                                        <span
-                                                            class="input-group-text position-absolute food-toggle-password"
-                                                            id="togglePassword">
-                                                            <i class="bi bi-eye-slash"></i>
-                                                        </span>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <!-- Password Field -->
+                                                        <label for="passwordInput"
+                                                            class="form-label lable-text">Password</label>
+                                                        <div class="input-group position-relative">
+                                                            <input type="password" id="passwordInput" class="form-input"
+                                                                placeholder="Enter your password">
+                                                            <span
+                                                                class="input-group-text position-absolute food-toggle-password"
+                                                                id="togglePassword">
+                                                                <i class="bi bi-eye-slash"></i>
+                                                            </span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-6 mb-3">
-                                                     <label for="passwordInput"
-                                                        class="form-label lable-text">Acount Status</label>
-                                                     <!-- Dropdown -->
-                                                    <select class="form-select  form-input">
-                                                        <option value="active">Active</option>
-                                                        <option value="inactive">Inactive</option>
-                                                    </select>
-                                                </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label for="passwordInput" class="form-label lable-text">Acount
+                                                            Status</label>
+                                                        <!-- Dropdown -->
+                                                        <select class="form-select  form-input">
+                                                            <option value="active">Active</option>
+                                                            <option value="inactive">Inactive</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
 
 
@@ -435,7 +452,7 @@
                                                     <!-- Delete Account Button -->
                                                     <button type="button" class="btn acount-delete px-3 py-1">Delete
                                                         Account</button>
-                                                   
+
                                                     <input type="submit" class=" food-profile-submit px-3 py-1"
                                                         value="Save">
 
